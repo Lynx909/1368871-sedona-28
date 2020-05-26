@@ -77,11 +77,31 @@
            и мы покажем вам лучшие предложения гостиниц в Cедоне  
         </p>
         <form action="" method="get">
-          <label for="date_1">Дата заезда:</label>
-          <input type="datetime" name="date_in" id="date_1">
-          <label for="date_2">Дата выезда:</label>
-          <input type="datetime" name="date_out" id="date_2"> 
-          <button>Найти</button>
+          <ul>
+           <li>
+            <label for="date_1">Дата заезда:</label>
+             <input type="datetime" name="date_in" id="date_1" placeholder="24 апреля 2017"><!--позже сменить name и id на нормальные-->
+           </li>
+           <li>
+            <label for="date_2">Дата выезда:</label>
+             <input type="datetime" name="date_out" id="date_2" placeholder="4 июля 2017"><!--позже сменить name и id на нормальные-->
+           </li>
+          </ul>
+          <label>
+            Взрослые:
+            <button type="button" disabled>-</button>
+            <input type="number" name="" placeholder="2"><!--когда смотришь как отображается страница в браузере, то в поле автоматически
+              появляется кнопка чтобы регулировать количество. стоит ли тогда здесь оставлять значение "number" или существует какое-то
+              более подходящее ?-->
+            <button type="button">+</button>
+          </label>
+          <label>
+            Дети:
+            <button type="button" disabled>-</button>
+            <input type="number" name="" placeholder="0">
+            <button type="button" >+</button>
+          </label>
+          <button type="submit">Найти</button>
         </form>
       </section>
     </main>
