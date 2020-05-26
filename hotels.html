@@ -21,28 +21,51 @@
      <section>
        <h2>Параметры поиска</h2>
        <img src="img/background_hotels.jpg" width="1200" height="217" alt="Размытый фон с изображением гор Седоны">
-       <div>
-          <b>Инфраструктура:</b>
+       <form action="" method="get">
+         <fieldset>
+          <legend>Инфраструктура:</legend>
          <ul>
-           <li><input type="checkbox" name="pool" id="">Бассейн</li>
-           <li><input type="checkbox" name="parking">Парковка</li>
-           <li><input type="checkbox" name="wifi">Wi-Fi</li>
+           <li>
+            <input type="checkbox" name="pool" id="filter_pool">
+            <label for="filter_pool">Бассейн</label>
+            </li>
+           <li>
+             <input type="checkbox" name="parking" id="filter_parking">
+             <label for="filter_parking">Парковка</label>
+            </li>
+           <li>
+             <input type="checkbox" name="wifi" id="filter_wifi">
+             <label for="filter_wifi">Wi-Fi</label>
+            </li>
          </ul>
-       </div>
-       <div>
-         <b>Тип жилья:</b>
+         </fieldset>
+       <fieldset>
+         <legend>Тип жилья:</legend>
          <ul>
-           <li><input type="checkbox" name="hotel">Гостиница</li>
-           <li><input type="checkbox" name="motel">Мотель</li>
-           <li><input type="checkbox" name="apartments">Апартаменты</li>
+           <li>
+             <input type="checkbox" name="hotel" id="filter_hotel">
+             <label for="filter_hotel">Гостиница</label>
+            </li>
+            <li>
+             <input type="checkbox" name="motel" id="filter_motel">
+             <label for="filter_motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter_apartments">
+              <label for="filter_apartments">Апартаменты</label>
+            </li>
          </ul>
-       </div>
+       </fieldset>
        <div>
          Стоимость в сутки (Р):
          <button type="submit">Показать</button>
        </div>
+       </form>
        <div>
-         <!-- добавить сортировку-->
+        <label>
+          Найдено:
+          <input type="number" name="result"> 
+        </label> <!-- добавить сортировку-->
        </div>
      </section>
      <section>
