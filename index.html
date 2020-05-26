@@ -79,12 +79,12 @@
         <form action="" method="get">
           <ul>
            <li>
-            <label for="date_1">Дата заезда:</label>
-             <input type="datetime" name="date_in" id="date_1" placeholder="24 апреля 2017"><!--позже сменить name и id на нормальные-->
+            <label for="arrival_date">Дата заезда:</label>
+             <input type="datetime" name="date_of_arrival" id="arrival_date" placeholder="24 апреля 2017">
            </li>
            <li>
-            <label for="date_2">Дата выезда:</label>
-             <input type="datetime" name="date_out" id="date_2" placeholder="4 июля 2017"><!--позже сменить name и id на нормальные-->
+            <label for="departure_date">Дата выезда:</label>
+             <input type="datetime" name="date_of_departure" id="departure_date" placeholder="4 июля 2017">
            </li>
           </ul>
           <label>
@@ -99,7 +99,7 @@
             Дети:
             <button type="button" disabled>-</button>
             <input type="number" name="children" placeholder="0">
-            <button type="button" >+</button>
+            <button type="button">+</button>
           </label>
           <button type="submit">Найти</button>
         </form>
