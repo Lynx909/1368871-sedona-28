@@ -17,7 +17,7 @@
     </nav> 
   </header>
   <main>
-    <h1>Поиск подходящей гостиницы</h1>
+    <h1 class="visually-hidden">Поиск подходящей гостиницы</h1>
      <section>
        <h2>Параметры поиска</h2>
        <img src="img/background_hotels.jpg" width="1200" height="217" alt="Размытый фон с изображением гор Седоны">
@@ -26,7 +26,7 @@
           <legend>Инфраструктура:</legend>
          <ul>
            <li>
-            <input type="checkbox" name="pool" id="filter_pool">
+            <input type="checkbox" name="pool" id="filter_pool" checked>
             <label for="filter_pool">Бассейн</label>
             </li>
            <li>
@@ -43,15 +43,15 @@
          <legend>Тип жилья:</legend>
          <ul>
            <li>
-             <input type="checkbox" name="hotel" id="filter_hotel">
+             <input type="checkbox" name="hotel" id="filter_hotel" checked>
              <label for="filter_hotel">Гостиница</label>
             </li>
             <li>
-             <input type="checkbox" name="motel" id="filter_motel">
+             <input type="checkbox" name="motel" id="filter_motel" checked>
              <label for="filter_motel">Мотель</label>
             </li>
             <li>
-              <input type="checkbox" name="apartments" id="filter_apartments">
+              <input type="checkbox" name="apartments" id="filter_apartments" checked>
               <label for="filter_apartments">Апартаменты</label>
             </li>
          </ul>
@@ -62,16 +62,18 @@
          <button type="submit">Показать</button>
        </div>
        </form>
-       <div> <!--Не могу толком придумать как сделать так, чтобы эта строка с сортировкой и выводом количества была правильной и красивой-->
+       <div>
          <!--добавить вариант с выводом количества гостиниц, подходящих под фильтр-->
-         <button>По цене</button>
-         <button>По типу</button>
-         <button>По рейтингу</button>
+         <ul>
+         <li>По цене</li>
+         <li>По типу</li>
+         <li>По рейтингу</li>
+         </ul>
           <!--добавить стрелочки сортировки-->
         </div>
      </section>
      <section>
-     <h2>Результаты поиска</h2>
+     <h2 class="visually-hidden">Результаты поиска</h2>
     <ul>
       <li>
          <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Гостиница Amara resort and spa">
@@ -114,7 +116,7 @@
          <span class="">От 2000 Р.</span>
         <div class="">
          <a href="">Подробнее</a>
-           <button type="button">Забронировать</button>
+           <input type="button" value="Забронировать"><!--если сделать здесь кнопку таким образом, пользователю ведь нужно будет меньше информации себе загружать? по весу-->
         </div>
         <div>
          <img scr="img/star.svg" width="18" height="17" alt=""> <!--звезды в дальнейшем можно будет как-то размножить с помощью css?-->
