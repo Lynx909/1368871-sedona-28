@@ -13,6 +13,7 @@
     --dark-grey: #A9A9A9;
     --text-color-index: #333333;
     --rating-text:#666666;
+    --regulation: #A9A9A9;
 }
 @font-face {
     font-family:'PT Sans';
@@ -21,15 +22,36 @@
     font-weight: normal;
     font-style: normal;
 }
+/*@font-face {
+    font-family:'PT Sans';
+    src: url('ptsansbold.woff2') format('woff2'),
+         url('ptsansbold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/*по тегам*/
 body{
     min-width: 1280;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
+    line-height: 21px;
     color: var(--black);
     text-transform: uppercase;
     background-color: var(--white);
+}
+.main-navigation {
+    line-height: 26px;
+    list-style: none;
+}
+ul {
+    list-style: none;
+}
+form {
+    background: #FFFFFF;
+box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 img{
     max-width: 100%;
@@ -38,7 +60,13 @@ img{
 h3{
     font-size: 21px;
 }
-
+a {
+    text-decoration: none;
+}
+footer {
+    background: rgba(255, 255, 255, 0.9);
+}
+/*классы*/
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -111,12 +139,23 @@ h3{
     background-color: var(--dark-brown);
 
 }
-
+.regulation {
+    background-color: var(--ivory);
+    color: var(--regulation) 
+}
+.regulation:hover {
+    color: var(--black);
+}
+.regulation:focus {
+    color: var(--light-blue)
+}
 /*названия отелей*/
 a h3 {
-    color: var(--black)
+    color: var(--black);
 }
-a h3:hover {color: var(--light-blue)}
+a h3:hover {
+    color: var(--light-blue);
+}
 a h3:active {
     color: var(--black);
     opacity: 0.3;
