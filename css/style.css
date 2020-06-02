@@ -1,11 +1,54 @@
-body{
-    background: #FFFFFF;
-    font-family: "PT Sans", sans-serif ;
+:root {
+    --white : #FFFFFF;
+    --black: #000000;
+    --gray-blue:#5496BD;
+    --blue:#669EC0;
+    --light-blue:#81B3D2;
+    --dark-brown:#503E33;
+    --brown: #604E43;
+    --light-brown: #766357;
+    --ivory:#F2F2F2;
+    --beige: #EBEBEB;
+    --dark-grey: #A9A9A9;
+    --text-color-index: #333333;
 }
+body{
+    min-width: 1280;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--white);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h3{
+    font-size: 21px;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+@font-face {
+    font-family:'PT Sans';
+    src: url('ptsans.woff2') format('woff2'),
+         url('ptsans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.blue-button{
+    background-color: var(--light-blue);
+}
+.brown-button{
+    background-color: var(--light-brown);
+    color: var(--white);
 }
