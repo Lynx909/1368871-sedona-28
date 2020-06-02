@@ -59,6 +59,22 @@ h3{
     background-color: var(--ivory);
     color: var(--rating-text);
 }
+.pick {
+    text-decoration: underline;
+    color: var(--black);
+    opacity: 0.3;
+}
+.pick:hover {
+    text-decoration: none;
+    color: var(--light-blue);
+    opacity: 1;
+}
+.pick:active {
+    text-decoration: none;
+    color: var(--black);
+    opacity: 1;
+
+}
 /*кнопки*/
 .button-result {
     border: 2px solid var(--white);
@@ -93,7 +109,7 @@ h3{
 }
 .brown-button:active {
     background-color: var(--dark-brown);
-    
+
 }
 
 /*названия отелей*/
