@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a><img scr="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
         <ul>
           <li><a href="">информация</a></li>
@@ -80,7 +80,7 @@
            и мы покажем вам лучшие предложения гостиниц в Cедоне  
         </p>
         <form action="" method="get">
-          <p>Поиск гостиницы в Седоне</p>
+          <button name="search" type="button" class="brown-button">Поиск гостиницы в Седоне</button><!--до <button> было <p>-->
           <ul>
            <li>
             <label for="arrival_date">Дата заезда:</label>
@@ -97,17 +97,13 @@
             <input type="number" name="adults" placeholder="2"><!--когда смотришь как отображается страница в браузере, то в поле автоматически
               появляется кнопка чтобы регулировать количество. стоит ли тогда здесь оставлять значение "number" или существует какое-то
               более подходящее ?-->
-            <button type="button">+</button>
+            <button type="button" class="regulation">+</button>
           </label>
           <label>
             Дети:
-            <button type="button" disabled>-</button>
-          </label>
-          <label>
-            Дети:
-            <button type="button" disabled>-</button>
+            <button type="button" class="regulation" disabled>-</button>
             <input type="number" name="children" placeholder="0">
-            <button type="button">+</button>
+            <button type="button" class="regulation">+</button>
           </label>
           <button type="submit" class="blue-button">Найти</button>
         </form>
