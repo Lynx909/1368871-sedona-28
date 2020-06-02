@@ -9,8 +9,17 @@
     --light-brown: #766357;
     --ivory:#F2F2F2;
     --beige: #EBEBEB;
+    --light-gray :#EEEEEE;
     --dark-grey: #A9A9A9;
     --text-color-index: #333333;
+    --rating-text:#666666;
+}
+@font-face {
+    font-family:'PT Sans';
+    src: url('ptsans.woff2') format('woff2'),
+         url('ptsans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
     min-width: 1280;
@@ -38,17 +47,61 @@ h3{
     margin: -1px;
 }
 
-@font-face {
-    font-family:'PT Sans';
-    src: url('ptsans.woff2') format('woff2'),
-         url('ptsans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-.blue-button{
+.reason-blue {
     background-color: var(--light-blue);
+    color: var(--white);
 }
-.brown-button{
+.reason {
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+.rating {
+    background-color: var(--ivory);
+    color: var(--rating-text);
+}
+/*кнопки*/
+.button-result {
+    border: 2px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.button-result:hover {
+    background: var(--white);
+    border: 2px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.blue-button {
+    background-color: var(--light-blue);
+    color: var(--white)
+}
+.blue-button:hover {
+    background-color: var(--blue);
+    color: var(--white)
+}
+.blue-button:active {
+    background-color: var(--gray-blue);
+    color: var(--white);
+    opacity: 0.3;
+}
+.brown-button {
     background-color: var(--light-brown);
     color: var(--white);
+}
+.brown-button:hover {
+    background-color: var(--brown);
+}
+.brown-button:active {
+    background-color: var(--dark-brown);
+    
+}
+
+/*названия отелей*/
+a h3 {
+    color: var(--black)
+}
+a h3:hover {color: var(--light-blue)}
+a h3:active {
+    color: var(--black);
+    opacity: 0.3;
 }
