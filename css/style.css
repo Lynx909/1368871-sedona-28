@@ -17,18 +17,18 @@
 }
 @font-face {
     font-family:'PT Sans';
-    src: url('ptsans.woff2') format('woff2'),
-         url('ptsans.woff') format('woff');
+    src: url('../fonts/ptsans.woff2') format('woff2'),
+         url('../fonts/ptsans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-/*@font-face {
-    font-family:'PT Sans';
-    src: url('ptsansbold.woff2') format('woff2'),
-         url('ptsansbold.woff') format('woff');
+@font-face {
+    font-family:'PT Sans bold';
+    src: url('../fonts/ptsansbold.woff2') format('woff2'),
+         url('../fonts/ptsansbold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 
 /*по тегам*/
 body{
@@ -125,8 +125,7 @@ footer {
 }
 .blue-button:active {
     background-color: var(--gray-blue);
-    color: var(--white);
-    opacity: 0.3;
+    color: #88b6d1;
 }
 .brown-button {
     background-color: var(--light-brown);
@@ -137,6 +136,7 @@ footer {
 }
 .brown-button:active {
     background-color: var(--dark-brown);
+    color:#857871;
 
 }
 .regulation {
