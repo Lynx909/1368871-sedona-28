@@ -23,7 +23,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family:'PT Sans bold';
+    font-family:'PT Sans Bold';
     src: url('../fonts/ptsansbold.woff2') format('woff2'),
          url('../fonts/ptsansbold.woff') format('woff');
     font-weight: normal;
@@ -42,13 +42,28 @@ body{
     text-transform: uppercase;
     background-color: var(--white);
 }
-.main-navigation {
+footer {
+    background: rgba(255, 255, 255, 0.9); /*на странице с отелями подвал просто белый, без прозрачности. 
+    ведь ничего страшного, если селектор по тегу будет с прозрачностью? главное ведь конечный результат, отображение*/
+}
+/*navigation*/
+.main-navigation li {
+    font-family: 'PT Sans Bold';
     line-height: 26px;
     list-style: none;
 }
-ul {
-    list-style: none;
+.main-navigation a {
+    text-decoration: none;
+    color: var(--black);
 }
+.main-navigation a:hover {
+    color: var(--light-blue)
+}
+.main-navigation a:active {
+    color: var(--black);
+    opacity: 0.3;
+}
+
 form {
     background: var(--white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -57,15 +72,18 @@ img{
     max-width: 100%;
     height: auto;
 }
-h3{
+/*h3{
     font-size: 21px;
-}
+}*/
+/*
 a {
     text-decoration: none;
 }
+*/
 footer {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /*классы*/
 .visually-hidden {
     position: absolute;
@@ -74,7 +92,6 @@ footer {
     height: 1px;
     margin: -1px;
 }
-
 .reason-blue {
     background-color: var(--light-blue);
     color: var(--white);
@@ -82,26 +99,33 @@ footer {
 .reason {
     background-color: var(--light-gray);
     color: var(--black);
+    text-align: center;
 }
 .rating {
     background-color: var(--ivory);
     color: var(--rating-text);
 }
-.pick {
+.pick li {
     text-decoration: underline;
     color: var(--black);
     opacity: 0.3;
+    list-style: none;
 }
-.pick:hover {
+.pick li:hover {
     text-decoration: none;
     color: var(--light-blue);
     opacity: 1;
 }
-.pick:active {
+.pick li:active {
     text-decoration: none;
     color: var(--black);
     opacity: 1;
 
+}
+/*класс для списка на главной*/
+.list-between-reasons {
+    text-align: center;
+    list-style: none;
 }
 /*кнопки*/
 .button-result {
@@ -117,11 +141,11 @@ footer {
 }
 .blue-button {
     background-color: var(--light-blue);
-    color: var(--white)
+    color: var(--white);
 }
 .blue-button:hover {
     background-color: var(--blue);
-    color: var(--white)
+    color: var(--white);
 }
 .blue-button:active {
     background-color: var(--gray-blue);
@@ -150,19 +174,33 @@ footer {
     color: var(--light-blue)
 }
 /*названия отелей*/
-a h3 {
+.link-hotels h3{
+    font-family: 'PT Sans Bold';
+    font-size: 21px;
+    line-height: 26px;
     color: var(--black);
 }
-a h3:hover {
+.link-hotels h3:hover {
     color: var(--light-blue);
 }
-a h3:active {
+.link-hotels h3:active {
     color: var(--black);
     opacity: 0.3;
 }
+.link-hotels a {
+    text-decoration: none;
+}
+.link-hotels li {
+    list-style: none;
+}
+/*footer*/
+/*.footer-social {
+
+}*/
 /*test*/
 .subtitle {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
 }
+
