@@ -11,7 +11,7 @@
     --beige: #EBEBEB;
     --light-gray :#EEEEEE;
     --dark-grey: #A9A9A9;
-    --text-color-index: #333333;
+    --small-text: #333333;
     --rating-text:#666666;
     --regulation: #A9A9A9;
 }
@@ -72,14 +72,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-/*h3{
-    font-size: 21px;
-}*/
-/*
-a {
-    text-decoration: none;
-}
-*/
+
 footer {
     background: rgba(255, 255, 255, 0.9);
 }
@@ -92,14 +85,31 @@ footer {
     height: 1px;
     margin: -1px;
 }
-.reason-blue {
+/*.reason-blue {
+    background-color: var(--light-blue);
+    color: var(--white);
+}*/
+.reason {
+    text-align: center;
+    list-style: none;
+}
+.reason h3 {
+    font-family:'PT Sans Bold';
+    font-size: 21px;
+    line-height: 21px;
+}
+.reason p {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 21px;
+}
+#index_first_color {
     background-color: var(--light-blue);
     color: var(--white);
 }
-.reason {
+#index_second_color {
     background-color: var(--light-gray);
     color: var(--black);
-    text-align: center;
 }
 .rating {
     background-color: var(--ivory);
@@ -142,6 +152,7 @@ footer {
 .blue-button {
     background-color: var(--light-blue);
     color: var(--white);
+    text-transform: uppercase;
 }
 .blue-button:hover {
     background-color: var(--blue);
@@ -154,6 +165,7 @@ footer {
 .brown-button {
     background-color: var(--light-brown);
     color: var(--white);
+    text-transform: uppercase;
 }
 .brown-button:hover {
     background-color: var(--brown);
@@ -194,13 +206,10 @@ footer {
     list-style: none;
 }
 /*footer*/
-/*.footer-social {
 
-}*/
-/*test*/
-.subtitle {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
+/*форма для поиска кнопки*/
+#index_button {
+    font-size: 21px;
+    line-height: 26px;
 }
-
+/*test*/

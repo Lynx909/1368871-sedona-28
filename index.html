@@ -26,11 +26,11 @@
       <section>
        <h2 class="visually-hidden">Что такое Седона</h2>
        <p>
-         <b>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</b><br>
+         <b>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</b><br> <!--подумать насчет жирности и размеров текста-->
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
        </p>
-       <ul>
-         <li class="reason-blue" style="text-align: left;">
+       <ul class="reason" class="small-text">
+         <li class="reason-blue" style="text-align: left;" id="index_first_color">
            <h3>НАСТОЯЩИЙ<br>ГОРОДОК</h3>
            <p>— №1 —<br>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br>ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
            <img src="img/image_index_1.jpg" width="800" height="256" alt="Фотография с изображением Седоны">
@@ -52,20 +52,20 @@
               <p>Не только китайского, но и местного<br>производства!</p>
             </li>
          </ul>
-         <li class="reason-blue" style="text-align: right;">
+         <li class="reason-blue" style="text-align: right;" id="index_first_color">
             <img src="img/image_index_2.jpg" width="800" height="256" alt="Фотография с изображением Моста дьявола">
             <h3>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
             <P>— №2 —<br>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br>ВЫ ОСМЕЛИТЕСЬ</P>
           </li>
-          <li class="reason">
+          <li class="reason" id="index_second_color">
             <h3>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
             <p>— №3 —<br>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
-          <li class="reason">
+          <li class="reason" id="index_second_color">
             <h3>КРАСИВАЯ<br>ДОРОГА</h3>
             <p>— №4 —<br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>НЕ СКУЧНО!</p>
           </li>
-          <li class="reason">
+          <li class="reason" id="index_second_color">
             <h3>МАЛО<br>ТУРИСТОВ</h3>
             <P>— №5 —<br>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>И ТОЛПИТСЯ ТАМ</P>
           </li>
@@ -74,13 +74,12 @@
       <section>
         <img src="img/map.jpg" width="1199" height="594" alt="Карта местности">
         <h2 class="visually-hidden">Подбор гостиницы по дате</h2>
-        <p>
-          <b>ЗАИНТЕРЕСОВАЛИСЬ?</b><br>
-          Укажите предполагаемые даты поездки,<br>
-           и мы покажем вам лучшие предложения гостиниц в Cедоне  
-        </p>
-        <form action="" method="get">
-          <button name="search" type="button" class="brown-button">Поиск гостиницы в Седоне</button><!--до <button> было <p>-->
+        <h3 style="font-family: 'PT Sans Bold'; text-align: center;" >ЗАИНТЕРЕСОВАЛИСЬ?</h3><br>
+         <p style="text-align: center;">Укажите предполагаемые даты поездки,<br>
+             и мы покажем вам лучшие предложения гостиниц в Cедоне  
+         </p>
+        <form action="" method="get" style="font-family: 'PT Sans Bold';">
+          <button name="search" type="button" class="brown-button" style="font-size: 21px;" id="index_button">Поиск гостиницы в Седоне</button><!--до <button> было <p>-->
           <ul>
            <li>
             <label for="arrival_date">Дата заезда:</label>
@@ -93,36 +92,36 @@
           </ul>
           <label>
             Взрослые:
-            <button type="button" disabled>-</button>
+            <button type="button" disabled id="index_button">-</button>
             <input type="number" name="adults" placeholder="2"><!--когда смотришь как отображается страница в браузере, то в поле автоматически
               появляется кнопка чтобы регулировать количество. стоит ли тогда здесь оставлять значение "number" или существует какое-то
               более подходящее ?-->
-            <button type="button" class="regulation">+</button>
+            <button type="button" class="regulation" id="index_button">+</button>
           </label>
           <label>
             Дети:
-            <button type="button" class="regulation" disabled>-</button>
+            <button type="button" class="regulation" disabled id="index_button">-</button>
             <input type="number" name="children" placeholder="0">
-            <button type="button" class="regulation">+</button>
+            <button type="button" class="regulation" id="index_button">+</button>
           </label>
-          <button type="submit" class="blue-button">Найти</button>
+          <button type="submit" class="blue-button" id="index_button">Найти</button>
         </form>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Как с нами связаться</h2>
-        <p>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <p style="font-family: 'PT Sans Bold';">
           #visitSEDONA<br>
           ТЕЛ: +7(495) 666-01-66
         </p>
       </section>
       <section>
-        <h2>Мы в соцсетях</h2>
-        <ul>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul style="list-style: none;">
           <li>
             <a href="#">
-              <img src="img/icon_twitter.svg" width="46" height="48" alt="Twitter" id="Twitter">
+              <img src="img/icon_twitter.svg" width="46" height="48" alt="Twitter">
             </a>
           </li>
           <li>
