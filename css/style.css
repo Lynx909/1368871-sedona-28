@@ -32,7 +32,7 @@
 
 /*по тегам*/
 body{
-    min-width: 1280;
+    width: 1280;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
@@ -276,6 +276,8 @@ padding-bottom: 16;
 }
 .main-footer p {
     font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
 }
 .footer-social ul {
     display: flex;
@@ -283,12 +285,46 @@ padding-bottom: 16;
 }
 .footer-social li {
     list-style: none;
+    padding-right: 6px;
 }
-
 
 .search-options {
     /*background: url(img/background_hotels.jpg) no-repeat;*/
     display: flex;
     flex-direction: row;
+}
+.filter {
+    display: flex;
+    flex-direction: row;
     
+}
+.filter span {
+    padding-left: 73px;
+    padding-top: 29px;
+    padding-bottom: 31px;
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
+}
+.filter p {
+    padding-top: 32px;
+    margin-right: 40px;
+    margin-left: 46px;
+    padding-bottom: 36px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.filter ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 32px;
+    padding-bottom: 36px;
+    padding-left: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 503px;
+}
+.filter #button-sort {
+    padding-top: 40px;
+    padding-bottom: 36px;
 }
