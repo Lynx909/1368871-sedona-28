@@ -47,17 +47,16 @@ footer {
     ведь ничего страшного, если селектор по тегу будет с прозрачностью? главное ведь конечный результат, отображение*/
 }
 /*navigation*/
-.main-navigation {
+.site-navigation {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
-.main-navigation-wrapper {
-
-}
-.site-navigation li {
+.site-navigation li{
     font-family: 'PT Sans Bold';
     line-height: 26px;
     list-style: none;
-
 }
 .site-navigation a {
     text-decoration: none;
@@ -79,13 +78,7 @@ footer {
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
-.main-header {
-    display: flex;
-}
-.main-header-logo {
 
-    order: 2
-}
 form {
     background: var(--white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -107,11 +100,10 @@ footer {
     height: 1px;
     margin: -1px;
 }
-/*.reason-blue {
-    background-color: var(--light-blue);
-    color: var(--white);
-}*/
 .reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     list-style: none;
 }
@@ -125,13 +117,21 @@ footer {
     font-size: 14px;
     line-height: 21px;
 }
-#index_first_color {
+.index-first-color {
     background-color: var(--light-blue);
     color: var(--white);
 }
-#index_second_color {
+.index-second-color {
     background-color: var(--light-gray);
     color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 47px;
+    padding-bottom: 54px;
+}
+.index-second-color p {
+    color: var(--small-text)
 }
 .rating {
     background-color: var(--ivory);
@@ -231,7 +231,6 @@ footer {
 .link-hotels li {
     list-style: none;
 }
-/*footer*/
 
 /*форма для поиска кнопки*/
 #index_button {
@@ -249,12 +248,15 @@ padding-right: 181px;
 padding-top: 16;
 padding-bottom: 16;
 */
-/*
-*/
+/*список внутри причин*/
 .list-between-reasons {
+    background-color: var(--white);
+    color: var(--black);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 82px;
 }
 .list-between-reasons h3 {
     font-family: "PT Sans Bold";
@@ -264,15 +266,9 @@ padding-bottom: 16;
 .list-between-reasons p {
     font-size: 14px;
     line-height: 21px;
+    color: var(--small-text);
 }
-
-.footer-social ul {
-    display: flex;
-    flex-direction: row;
-}
-.footer-social li {
-    list-style: none;
-}
+/*footer*/
 .main-footer {
     display: flex;
     flex-direction: row;
@@ -280,4 +276,11 @@ padding-bottom: 16;
 }
 .main-footer p {
     font-family: "PT Sans Bold";
+}
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer-social li {
+    list-style: none;
 }
