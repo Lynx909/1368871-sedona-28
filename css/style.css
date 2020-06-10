@@ -273,3 +273,6 @@ padding-bottom: 16;
 .footer-social li {
     list-style: none;
 }
+.main-footer p {
+    font-family: "PT Sans Bold";
+}
