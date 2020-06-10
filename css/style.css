@@ -42,6 +42,9 @@ body{
     text-transform: uppercase;
     background-color: var(--white);
 }
+header {
+    height: 564px;
+}
 footer {
     background: rgba(255, 255, 255, 0.9); /*на странице с отелями подвал просто белый, без прозрачности. 
     ведь ничего страшного, если селектор по тегу будет с прозрачностью? главное ведь конечный результат, отображение*/
@@ -327,4 +330,45 @@ padding-bottom: 16;
 .filter #button-sort {
     padding-top: 40px;
     padding-bottom: 36px;
+}
+.item-index-text-above {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+.item-index-text-above span {
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
+}
+.item-index-text-above p {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--small-text);
+}
+.item-index-text-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 24px;
+}
+.item-index-text-down h3 {
+    font-family: 'PT Sans Bold';
+    font-size: 30px;
+    line-height: 24px;
+}
+.item-index-text-down p {
+    font-size: 14px;
+    color: var(--small-text);
+}
+.item-index-form {
+    font-family: 'PT Sans Bold';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-index-form li {
+    list-style: none;
 }

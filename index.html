@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="">информация</a></li>
@@ -21,18 +21,31 @@
         </ul>
       </nav>
       <div>
-        <img src="img/index_welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепную Седону">
-        <img src="img/background_mountains.jpg" width="1200" height="509" alt="фон с изображением гор Седоны">
+        <img src="img/background_mountains.jpg" width="1200" height="509" alt="фон с изображением гор Седоны"
+         style="position: absolute;
+         width: 1200px;
+         height: 509px;
+         left: 40px;
+         top: 55px;">
+        <img src="img/index_welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепную Седону"
+          style=
+          "position: absolute;
+          width: 456.65px;
+          height: 350.88px;
+          left: 411.38px;
+          top: 132.35px;">
       </div>
     </header>
     <main>
       <h1 class="visually-hidden">Welcome to Sedona</h1>
       <section>
+        <div class="item-index-text-above">
        <h2 class="visually-hidden">Что такое Седона</h2>
-       <p>
-         <b>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</b><br> <!--подумать насчет жирности и размеров текста-->
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-       </p>
+       <span>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</span><!--подумать насчет жирности и размеров текста-->
+        <p style="font-size: 14px;
+          line-height: 26px;">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+         </p>
+       </div>
        <ul class="reason" class="small-text">
          <div class="index-first-color">
          <li style="text-align: left;">
@@ -80,13 +93,15 @@
        </ul>
       </section>
       <section>
+        <div class="item-index-text-down">
         <img src="img/map.jpg" width="1199" height="594" alt="Карта местности">
         <h2 class="visually-hidden">Подбор гостиницы по дате</h2>
-        <h3 style="font-family: 'PT Sans Bold'; text-align: center;" >ЗАИНТЕРЕСОВАЛИСЬ?</h3><br>
-         <p style="text-align: center;">Укажите предполагаемые даты поездки,<br>
+        <h3 >ЗАИНТЕРЕСОВАЛИСЬ?</h3><br>
+         <p>Укажите предполагаемые даты поездки,<br>
              и мы покажем вам лучшие предложения гостиниц в Cедоне  
          </p>
-        <form action="" method="get" style="font-family: 'PT Sans Bold';">
+        </div>
+        <form action="" method="get" class="item-index-form">
           <button name="search" type="button" class="brown-button" style="font-size: 21px;" id="index_button">Поиск гостиницы в Седоне</button><!--до <button> было <p>-->
           <ul>
            <li>
@@ -100,7 +115,7 @@
           </ul>
           <label>
             Взрослые:
-            <button type="button" disabled id="index_button">-</button>
+            <button type="button" class="regulation" disabled id="index_button">-</button>
             <input type="number" name="adults" placeholder="2"><!--когда смотришь как отображается страница в браузере, то в поле автоматически
               появляется кнопка чтобы регулировать количество. стоит ли тогда здесь оставлять значение "number" или существует какое-то
               более подходящее ?-->
