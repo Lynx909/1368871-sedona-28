@@ -9,20 +9,22 @@
 </head>
 <body class="page-body">
 <header class="main-header">
-    <nav class="main-navigation">
-      <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
-      <ul class="site-navigation">
-        <li><a href="">информация</a></li>
-        <li><a href="">фото и видео</a></li>
-        <li><a href="">карта штата</a></li>
-        <li><a href="hotels.html">гостиницы</a></li>
-      </ul>  
-    </nav> 
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li><a href="">информация</a></li>
+      <li><a href="">фото и видео</a></li>
+      <div>
+        <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+      </div>
+      <li><a href="">карта штата</a></li>
+      <li><a href="hotels.html">гостиницы</a></li>
+    </ul>
+  </nav>
   </header>
   <main>
     <h1 class="visually-hidden">Поиск подходящей гостиницы</h1>
      <section>
-       <h2>Параметры поиска</h2>
+       <h2 class="visually-hidden">Параметры поиска</h2>
        <img src="img/background_hotels.jpg" width="1200" height="217" alt="Размытый фон с изображением гор Седоны">
        <form action="" method="get">
          <fieldset>
@@ -42,9 +44,9 @@
             </li>
          </ul>
          </fieldset>
-       <fieldset>
-         <legend>Тип жилья:</legend>
-         <ul style="list-style: none;">
+          <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul style="list-style: none;">
            <li>
              <input type="checkbox" name="hotel" id="filter_hotel" checked>
              <label for="filter_hotel">Гостиница</label>
@@ -57,8 +59,8 @@
               <input type="checkbox" name="apartments" id="filter_apartments" checked>
               <label for="filter_apartments">Апартаменты</label>
             </li>
-         </ul>
-       </fieldset>
+           </ul>
+           </fieldset>
        <div>
          Стоимость в сутки (Р):<br>
          <input type="range"><br>
