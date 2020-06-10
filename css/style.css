@@ -254,7 +254,7 @@ padding-bottom: 16;
 .list-between-reasons {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-around;
 }
 .list-between-reasons h3 {
     font-family: "PT Sans Bold";
@@ -272,6 +272,11 @@ padding-bottom: 16;
 }
 .footer-social li {
     list-style: none;
+}
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .main-footer p {
     font-family: "PT Sans Bold";
