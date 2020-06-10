@@ -137,18 +137,18 @@ footer {
     background-color: var(--ivory);
     color: var(--rating-text);
 }
-.pick li {
+.filter-results li {
     text-decoration: underline;
     color: var(--black);
     opacity: 0.3;
     list-style: none;
 }
-.pick li:hover {
+.filter-results li:hover {
     text-decoration: none;
     color: var(--light-blue);
     opacity: 1;
 }
-.pick li:active {
+.filter-results li:active {
     text-decoration: none;
     color: var(--black);
     opacity: 1;
@@ -283,4 +283,12 @@ padding-bottom: 16;
 }
 .footer-social li {
     list-style: none;
+}
+
+
+.search-options {
+    /*background: url(img/background_hotels.jpg) no-repeat;*/
+    display: flex;
+    flex-direction: row;
+    
 }
