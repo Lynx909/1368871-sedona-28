@@ -47,23 +47,45 @@ footer {
     ведь ничего страшного, если селектор по тегу будет с прозрачностью? главное ведь конечный результат, отображение*/
 }
 /*navigation*/
-.main-navigation li {
+.main-navigation {
+    display: flex;
+}
+.main-navigation-wrapper {
+
+}
+.site-navigation li {
     font-family: 'PT Sans Bold';
     line-height: 26px;
     list-style: none;
+
 }
-.main-navigation a {
+.site-navigation a {
     text-decoration: none;
     color: var(--black);
 }
-.main-navigation a:hover {
+.site-navigation a:hover {
     color: var(--light-blue)
 }
-.main-navigation a:active {
+.site-navigation a:active {
     color: var(--black);
     opacity: 0.3;
 }
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+.main-header {
+    display: flex;
+}
+.main-header-logo {
 
+    order: 2
+}
 form {
     background: var(--white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -186,6 +208,10 @@ footer {
     color: var(--light-blue)
 }
 /*названия отелей*/
+.link-hotels {
+    display: flex;
+    flex-direction: column;
+}
 .link-hotels h3{
     font-family: 'PT Sans Bold';
     font-size: 21px;
@@ -211,5 +237,39 @@ footer {
 #index_button {
     font-size: 21px;
     line-height: 26px;
+    /*padding-left: 181px;
+    padding-right: 181px;
+    padding-top: 16;
+    padding-bottom: 16;*/
 }
 /*test*/
+/* кнопка Найти на главной
+padding-left: 181px;
+padding-right: 181px;
+padding-top: 16;
+padding-bottom: 16;
+*/
+/*
+*/
+.list-between-reasons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.list-between-reasons h3 {
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 21px;
+}
+.list-between-reasons p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer-social li {
+    list-style: none;
+}
