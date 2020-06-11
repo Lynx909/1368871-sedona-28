@@ -43,7 +43,9 @@ body{
     background-color: var(--white);
 }
 header {
-    height: 564px;
+    /*height: 564px;*/
+    height: auto;
+    width: 1200px;
 }
 footer {
     background: rgba(255, 255, 255, 0.9); /*на странице с отелями подвал просто белый, без прозрачности. 
@@ -244,13 +246,6 @@ footer {
     padding-top: 16;
     padding-bottom: 16;*/
 }
-/*test*/
-/* кнопка Найти на главной
-padding-left: 181px;
-padding-right: 181px;
-padding-top: 16;
-padding-bottom: 16;
-*/
 /*список внутри причин*/
 .list-between-reasons {
     background-color: var(--white);
@@ -292,7 +287,7 @@ padding-bottom: 16;
 }
 
 .search-options {
-    /*background: url(img/background_hotels.jpg) no-repeat;*/
+    background: url(img/background_hotels.jpg) no-repeat;
     display: flex;
     flex-direction: row;
 }
@@ -371,4 +366,56 @@ padding-bottom: 16;
 }
 .item-index-form li {
     list-style: none;
+}
+
+.option {
+    display: block;
+    margin-bottom: 25px;
+}
+.check {
+    padding-left: 1em;
+}
+.check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.check-box {
+    position: absolute;
+    margin-left: -1em;
+    width: 1rem;
+    height: 1em;
+    background-image: url(/img/checkbox-off.svg) ;
+}
+.check-input:checked + .check-box {
+    background-image: url(/img/checkbox-on.svg) ;
+}
+.check-input:focus + .check-box {
+    background-image: url(/img/checkbox-off.svg) ;
+}
+.check-input:checked:focus + .check-box {
+    background-image: url(/img/checkbox-on.svg) ;
+}
+.check-input:disabled + .check-box {
+    background-image: url(/img/checkbox-on-gray.svg) ;
+}
+.check-input:checked:disabled + .check-box {
+    background-image: url(/img/checkbox-off-gray.svg) ;
+}
+
+.social-button:hover path ,
+.social-button:focus path {
+    fill: var(--white);
+}
+.social-button:hover rect,
+.social-button:focus rect {
+    fill: var(--blue)
+}
+.social-button:active path {
+    fill: var(--white);
+    fill-opacity: 0.3;
+}
+.social-button:active rect {
+    fill: var(--gray-blue)
 }

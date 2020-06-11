@@ -32,16 +32,21 @@
           <legend>Инфраструктура:</legend>
          <ul style="list-style: none;">
            <li>
-            <input type="checkbox" name="pool" id="filter_pool" checked>
-            <label for="filter_pool">Бассейн</label>
+            <input type="checkbox" name="pool" id="filter_pool" class="check-input" checked disabled>
+            <label for="filter_pool" class="check option"><span class="check-box"></span>Бассейн</label>
+            </li>
+            <li>
+              <label for="filter_pool" class="check option"><span class="check-box"></span>
+              <input type="checkbox" name="pool" id="filter_pool" class="check-input" checked disabled>
+              Бассейн</label>
+              </li>
+           <li>
+             <input type="checkbox" name="parking" id="filter_parking" class="check-input">
+             <label for="filter_parking" class="check option"><span class="check-box"></span>Парковка</label>
             </li>
            <li>
-             <input type="checkbox" name="parking" id="filter_parking">
-             <label for="filter_parking">Парковка</label>
-            </li>
-           <li>
-             <input type="checkbox" name="wifi" id="filter_wifi">
-             <label for="filter_wifi">Wi-Fi</label>
+             <input type="checkbox" name="wifi" id="filter_wifi" class="check-input">
+             <label for="filter_wifi" class="check option"><span class="check-box"></span>Wi-Fi</label>
             </li>
          </ul>
          </fieldset>
@@ -49,16 +54,16 @@
           <legend>Тип жилья:</legend>
           <ul style="list-style: none;">
            <li>
-             <input type="checkbox" name="hotel" id="filter_hotel" checked>
-             <label for="filter_hotel">Гостиница</label>
+             <input type="checkbox" name="hotel" id="filter_hotel" class="check-input" checked>
+             <label for="filter_hotel" class="check option"><span class="check-box"></span>Гостиница</label>
             </li>
             <li>
-             <input type="checkbox" name="motel" id="filter_motel" checked>
-             <label for="filter_motel">Мотель</label>
+             <input type="checkbox" name="motel" id="filter_motel" class="check-input" checked>
+             <label for="filter_motel" class="check option"><span class="check-box"></span>Мотель</label>
             </li>
             <li>
-              <input type="checkbox" name="apartments" id="filter_apartments" checked>
-              <label for="filter_apartments">Апартаменты</label>
+              <input type="checkbox" name="apartments" id="filter_apartments" class="check-input" checked>
+              <label for="filter_apartments" class="check option"><span class="check-box"></span>Апартаменты</label>
             </li>
            </ul>
            </fieldset>
@@ -104,7 +109,10 @@
          <button type="button" class="brown-button">Забронировать</button>
         </div>
         <div>
-         <img src="img/star.svg" width="18" height="17" alt="">
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
          <p class="rating">Рейтинг: 8,5</p>
         </div>
       </li>
@@ -120,7 +128,9 @@
          <button type="button" class="brown-button">Забронировать</button>
         </div>
         <div>
-         <img src="img/star.svg" width="18" height="17" alt="">
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
          <p class="rating">Рейтинг: 8,9</p>
         </div>
       </li>
@@ -136,7 +146,9 @@
          <button type="button" class="brown-button">Забронировать</button>
         </div>
         <div>
-         <img src="img/star.svg" width="18" height="17" alt=""> <!--звезды в дальнейшем можно будет как-то размножить с помощью css?-->
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+         <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
+          <!--звезды в дальнейшем можно будет как-то размножить с помощью css?-->
          <p class="rating">Рейтинг: 9,2</p>
         </div>
      </li>
@@ -155,7 +167,7 @@
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
         <li>
-          <a href="#">
+          <a class="social-button" href="#">
             <span class="visually-hidden">Twitter</span>
             <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="48" fill="#81B3D2"/>
@@ -164,7 +176,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="social-button" href="#">
             <span class="visually-hidden">Facebook</span>
             <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="48" fill="#81B3D2"/>
@@ -173,7 +185,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="social-button" href="#">
             <span class="visually-hidden">YouTube</span>
             <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="48" fill="#81B3D2"/>
