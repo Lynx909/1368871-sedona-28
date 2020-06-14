@@ -236,7 +236,7 @@ footer {
 .link-hotels a {
     text-decoration: none;
 }
-.link-hotels li {
+/*.link-hotels li {
     list-style: none;
     display: flex;
     padding-top: 30px;
@@ -244,8 +244,24 @@ footer {
     padding-bottom: 30px;
     padding-left: 73px;
     justify-content: space-around;
+}*/
+.link-hotels li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-right: 85px;
+    padding-bottom: 30px;
+    padding-left: 73px;
 }
-
+.hotels-center-div {
+    padding-left: 30px;
+    padding-right: 522px;
+    align-self: flex-start;
+}
+.div-rating{
+    align-self: flex-start;
+}
 /*форма для поиска кнопки*/
 #index_button {
     font-size: 21px;
