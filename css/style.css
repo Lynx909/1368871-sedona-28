@@ -32,7 +32,7 @@
 
 /*по тегам*/
 body{
-    width: 1280;
+    max-width: 1280px;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
@@ -41,6 +41,7 @@ body{
     color: var(--black);
     text-transform: uppercase;
     background-color: var(--white);
+    display: flex;
 }
 header {
     /*height: 564px;*/
@@ -216,6 +217,8 @@ footer {
 .link-hotels {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+
 }
 .link-hotels h3{
     font-family: 'PT Sans Bold';
@@ -235,6 +238,12 @@ footer {
 }
 .link-hotels li {
     list-style: none;
+    display: flex;
+    padding-top: 30px;
+    padding-right: 85px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+    justify-content: space-around;
 }
 
 /*форма для поиска кнопки*/
@@ -286,10 +295,11 @@ footer {
     padding-right: 6px;
 }
 
-.search-options {
-    background: url(img/background_hotels.jpg) no-repeat;
+.search-options form{
     display: flex;
     flex-direction: row;
+    background-image: url(/img/background_hotels.jpg);
+    /*background-repeat: no-repeat;*/
 }
 .filter {
     display: flex;
@@ -363,6 +373,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 568px;
 }
 .item-index-form li {
     list-style: none;
@@ -404,17 +415,19 @@ footer {
     background-image: url(/img/checkbox-off-gray.svg) ;
 }
 
-.social-button:hover path ,
-.social-button:focus path {
+.social-button path {
     fill: var(--white);
-}
-.social-button:hover rect,
-.social-button:focus rect {
-    fill: var(--blue)
 }
 .social-button:active path {
     fill: var(--white);
     fill-opacity: 0.3;
+}
+.social-button:hover rect {
+    fill: var(--light-blue)
+}
+.social-button:hover rect,
+.social-button:focus rect {
+    fill: var(--blue)
 }
 .social-button:active rect {
     fill: var(--gray-blue)
