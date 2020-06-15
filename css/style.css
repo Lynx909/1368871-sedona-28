@@ -301,6 +301,8 @@ footer {
     font-family: "PT Sans Bold";
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
+
 }
 .footer-social ul {
     display: flex;
@@ -447,4 +449,11 @@ footer {
 }
 .social-button:active rect {
     fill: var(--gray-blue)
+}
+.logo-htmlacademy:hover path,
+.logo-htmlacademy:focus path {
+    fill: var(--light-blue)
+}
+.logo-htmlacademy:active path{
+    fill: #BDBBBC
 }
