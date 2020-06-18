@@ -48,10 +48,6 @@
 header {
     height: 56px;
 }
-footer {
-    background: rgba(255, 255, 255, 0.9); /*на странице с отелями подвал просто белый, без прозрачности. 
-    ведь ничего страшного, если селектор по тегу будет с прозрачностью? главное ведь конечный результат, отображение*/
-}
 /*navigation*/
 .site-navigation {
     display: flex;
@@ -95,18 +91,10 @@ footer {
     grid-template-rows: min-content 1fr min-content;
     align-content: start;*/
 }
-
 .form {
     background: var(--white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
-
-
-
-footer {
-    background: rgba(255, 255, 255, 0.9);
-}
-
 /*классы*/
 .visually-hidden {
     position: absolute;
@@ -114,39 +102,6 @@ footer {
     width: 1px;
     height: 1px;
     margin: -1px;
-}
-.reason {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    list-style: none;
-}
-.reason h3 {
-    font-family:'PT Sans Bold';
-    font-size: 21px;
-    line-height: 21px;
-}
-.reason p {
-    font-family: 'PT Sans';
-    font-size: 14px;
-    line-height: 21px;
-}
-.index-first-color {
-    background-color: var(--light-blue);
-    color: var(--white);
-}
-.index-second-color {
-    background-color: var(--light-gray);
-    color: var(--black);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 47px;
-    padding-bottom: 54px;
-}
-.index-second-color p {
-    color: var(--small-text)
 }
 .rating {
     background-color: var(--ivory);
@@ -169,11 +124,7 @@ footer {
     opacity: 1;
 
 }
-/*класс для списка на главной*/
-.list-between-reasons {
-    text-align: center;
-    list-style: none;
-}
+
 /*кнопки*/
 .button-result {
     font-family: 'PT Sans';
@@ -274,7 +225,7 @@ footer {
 }
 .div-rating{
     align-self: flex-start;
-    background-image: url(img/star.svg);
+    background-image: url(../img/star.svg);
     background-repeat: repeat-x;
 }
 /*форма для поиска кнопки*/
@@ -287,48 +238,6 @@ footer {
     padding-top: 16;
     padding-bottom: 16;*/
 }
-/*список внутри причин*/
-.list-between-reasons {
-    background-color: var(--white);
-    color: var(--black);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 60px;
-    padding-bottom: 82px;
-}
-.list-between-reasons h3 {
-    font-family: "PT Sans Bold";
-    font-size: 21px;
-    line-height: 21px;
-}
-.list-between-reasons p {
-    font-size: 14px;
-    line-height: 21px;
-    color: var(--small-text);
-}
-/*footer*/
-.main-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.main-footer p {
-    font-family: "PT Sans Bold";
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-
-}
-.footer-social ul {
-    display: flex;
-    flex-direction: row;
-}
-.footer-social li {
-    list-style: none;
-    padding-right: 6px;
-}
-
 .search-options{
     display: flex;
     flex-direction: row;
@@ -385,38 +294,6 @@ footer {
 .filter button {
     border: none;
     background: none;
-}
-.item-index-text-above {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    }
-.item-index-text-above span {
-    font-family: "PT Sans Bold";
-    font-size: 21px;
-    line-height: 26px;
-}
-.item-index-text-above p {
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--small-text);
-}
-.item-index-text-down {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    line-height: 24px;
-}
-.item-index-text-down h3 {
-    font-family: 'PT Sans Bold';
-    font-size: 30px;
-    line-height: 24px;
-}
-.item-index-text-down p {
-    font-size: 14px;
-    color: var(--small-text);
 }
 .item-index-form {
     font-family: 'PT Sans Bold';
@@ -574,7 +451,7 @@ footer {
     background-color: var(--white);
     box-shadow: 0 5px 15px var(--brown);
     width: 100%;
-    height: 100vh;/*удалить*/
+    height: 400vh;/*удалить*/
     position: relative;
 }
 /*общие*/
@@ -588,7 +465,9 @@ body {
     color: var(--black);
     text-transform: uppercase;
 }
-
+footer {
+    background: rgba(255, 255, 255, 0.9);
+}
 /*шапка*/
 .main-header-logo {
     position: absolute;
@@ -605,5 +484,184 @@ body {
     background-repeat: no-repeat;
 }
 /*основной контент*/
-
+/*текст наверху на главной*/
+.item-index-text-above {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    }
+.item-index-text-above span {
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 25px;
+}
+.item-index-text-above p {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--small-text);
+    margin-bottom: 51px;
+}
+/*причины*/
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.reason h3 {
+    font-family:'PT Sans Bold';
+    font-size: 21px;
+    line-height: 21px;
+}
+.reason p {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    color: var(--small-text)
+}
+.first-blue-box {
+    background-color: var(--light-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+.first-blue-box div {
+    padding-top: 47px;
+    padding-bottom: 54px;
+    padding-right: 51px;
+    padding-left: 52px;
+}
+.first-blue-box h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.first-blue-box p {
+    color: var(--white);
+}
+.first-blue-box span{
+    display: block;
+    padding-bottom: 23px;
+}
+.second-blue-box {
+    background-color: var(--light-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+.second-blue-box h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.second-blue-box p {
+    color: var(--white);
+}
+.second-blue-box div {
+    padding-top: 50px;
+    padding-bottom: 51px;
+    padding-right: 49px;
+    padding-left: 50px;
+}
+.second-blue-box span {
+    display: block;
+    padding-bottom: 23px;
+}
+/*класс для списка на главной*/
+.list-between-reasons {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 73px;
+    margin-right: 65px;
+    margin-bottom: 82px;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-between-reasons h3 {
+    padding-bottom: 25px;
+}
+.index-second-color {
+    background-color: var(--light-gray);
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 54px;
+    padding-left: 96px;
+    padding-right: 77px;
+}
+.index-second-color h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+}
+.index-second-color span {
+    display: block;
+    padding-bottom: 23px;
+}
+/*текст внизу на главной*/
+.item-index-text-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 58px;
+}
+.item-index-text-down h3 {
+    margin: 0;
+    padding-bottom: 30px;/*уточнить*/
+    font-family: 'PT Sans Bold';
+    font-size: 30px;
+    line-height: 24px;
+}
+.item-index-text-down p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--small-text);
+}
 /*подвал*/
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+.main-footer section:first-child {
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 111px;
+    padding-right: 0;
+}
+.main-footer section:last-child {
+    margin-right: 138px;
+}
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.footer-social li {
+    list-style: none;
+    padding-right: 6px;
+}
