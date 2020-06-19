@@ -16,6 +16,8 @@
     --regulation: #A9A9A9;
     --logo-htmlacademy-light: #BDBBBC;
     --basic-gray: #888888;
+    --blue-button-opacity-text: #88b6d1;
+    --brown-button-opacity-text :#857871;
 }
 @font-face {
     font-family:'PT Sans';
@@ -103,10 +105,7 @@ header {
     height: 1px;
     margin: -1px;
 }
-.rating {
-    background-color: var(--ivory);
-    color: var(--rating-text);
-}
+
 .filter-results li {
     text-decoration: underline;
     color: var(--black);
@@ -176,57 +175,6 @@ header {
 }
 .regulation:focus {
     color: var(--light-blue)
-}
-/*названия отелей*/
-.link-hotels {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-.link-hotels h3{
-    font-family: 'PT Sans Bold';
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--black);
-}
-.link-hotels h3:hover {
-    color: var(--light-blue);
-}
-.link-hotels h3:active {
-    color: var(--black);
-    opacity: 0.3;
-}
-.link-hotels a {
-    text-decoration: none;
-}
-/*.link-hotels li {
-    list-style: none;
-    display: flex;
-    padding-top: 30px;
-    padding-right: 85px;
-    padding-bottom: 30px;
-    padding-left: 73px;
-    justify-content: space-around;
-}*/
-.link-hotels li {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-    padding-right: 85px;
-    padding-bottom: 30px;
-    padding-left: 73px;
-}
-.hotels-center-div {
-    padding-left: 30px;
-    padding-right: 522px;
-    align-self: flex-start;
-}
-.div-rating{
-    align-self: flex-start;
-    background-image: url(../img/star.svg);
-    background-repeat: repeat-x;
 }
 /*форма для поиска кнопки*/
 #index_button {
@@ -632,6 +580,114 @@ footer {
     margin: 0;
     font-size: 14px;
     color: var(--small-text);
+}
+/*список отелей*/
+.hotels-center-div {
+    padding-left: 29px;
+    padding-right: 522px;
+    align-self: flex-start;
+}
+.link-hotels {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*justify-content: space-around;*/
+}
+.link-hotels li {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-right: 71px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+}
+.link-hotels h3{
+    font-family: 'PT Sans Bold';
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+    margin: 0;
+    padding-bottom: 7px;
+}
+.link-hotels h3:hover {
+    color: var(--light-blue);
+}
+.link-hotels h3:active {
+    color: var(--black);
+    opacity: 0.3;
+}
+.link-hotels a {
+    text-decoration: none;
+}
+.link-hotels span {
+    display: inline-block;
+    width: 107px;
+    height: 21px;
+}
+.hotels-button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15.5px;
+}
+.hotel-info {
+    display: block;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    margin-right: 6px;
+    font-family: 'PT Sans Bold';
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    background: var(--light-blue);
+}
+.hotel-info:hover {
+    background: var(--blue);
+}
+.hotel-info:active {
+    background: var(--gray-blue);
+    color: var(--blue-button-opacity-text);
+}
+.reservation-button {
+    display: block;
+    padding-left: 16px;
+    padding-top: 3px;
+    padding-right: 17px;
+    padding-bottom: 3px;
+    font-family: 'PT Sans Bold';
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--light-brown);
+    border: none;
+}
+.reservation-button:hover {
+    background: var(--brown);
+}
+.reservation-button:active {
+    background: var(--dark-brown);
+    color: var(--brown-button-opacity-text)
+}
+.div-rating {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-image: url(../img/star.svg);
+    background-repeat: no-repeat;
+}
+.rating {
+    margin-top: 47px;
+    padding-top: 3px;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    background-color: var(--ivory);
+    color: var(--rating-text);
+
 }
 /*подвал*/
 .main-footer {
