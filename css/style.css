@@ -106,23 +106,7 @@ header {
     margin: -1px;
 }
 
-.filter-results li {
-    text-decoration: underline;
-    color: var(--black);
-    opacity: 0.3;
-    list-style: none;
-}
-.filter-results li:hover {
-    text-decoration: none;
-    color: var(--light-blue);
-    opacity: 1;
-}
-.filter-results li:active {
-    text-decoration: none;
-    color: var(--black);
-    opacity: 1;
 
-}
 
 /*кнопки*/
 .button-result {
@@ -204,45 +188,7 @@ header {
 .search-options #range{
     margin-right: 73px;
 }
-.filter {
-    display: flex;
-    flex-direction: row;
-    
-}
-.filter span {
-    padding-left: 73px;
-    padding-top: 29px;
-    padding-bottom: 31px;
-    font-family: "PT Sans Bold";
-    font-size: 21px;
-    line-height: 26px;
-}
-.filter p {
-    padding-top: 32px;
-    margin-right: 40px;
-    margin-left: 46px;
-    padding-bottom: 36px;
-    font-size: 12px;
-    line-height: 18px;
-}
-.filter ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 32px;
-    padding-bottom: 36px;
-    padding-left: 0px;
-    font-size: 12px;
-    line-height: 18px;
-    margin-right: 503px;
-}
-.filter #button-sort {
-    padding-top: 40px;
-    padding-bottom: 36px;
-}
-.filter button {
-    border: none;
-    background: none;
-}
+
 .item-index-form {
     font-family: 'PT Sans Bold';
     display: flex;
@@ -399,7 +345,8 @@ header {
     background-color: var(--white);
     box-shadow: 0 5px 15px var(--brown);
     width: 100%;
-    height: 400vh;/*удалить*/
+    height: auto;/*потом изменить*/
+    /*height: 400vh;*./*удалить*/
     position: relative;
 }
 /*общие*/
@@ -581,6 +528,67 @@ footer {
     font-size: 14px;
     color: var(--small-text);
 }
+/*Сортировка отелей*/
+.filter {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 18px;
+}
+.filter span {
+    padding-left: 73px;
+    padding-top: 29px;
+    padding-bottom: 31px;
+    font-family: "PT Sans Bold";
+    font-size: 21px;
+    line-height: 26px;
+}
+.filter p {
+    padding-top: 31px;
+    padding-right: 40px;
+    padding-left: 46px;
+    padding-bottom: 37px;
+    margin: 0;
+}
+.filter button {
+    padding-top: 40px;
+    padding-bottom: 36px;
+    border: none;
+    background: none;
+}
+.filter button path:hover {
+    fill: var(--black);
+}
+.filter button path:active {
+    fill: var(--light-blue);
+}
+.filter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 31px;
+    margin-right: 471px;
+    margin-left: 0;
+    margin-bottom: 37px;
+    padding: 0;
+}
+.filter-results li {
+    text-decoration: underline;
+    color: var(--black);
+    opacity: 0.3;
+    list-style: none;
+    padding-right: 32px;
+}
+.filter-results li:hover {
+    text-decoration: none;
+    color: var(--light-blue);
+    opacity: 1;
+}
+.filter-results li:active {
+    text-decoration: none;
+    color: var(--black);
+    opacity: 1;
+}
 /*список отелей*/
 .hotels-center-div {
     padding-left: 29px;
@@ -687,7 +695,6 @@ footer {
     padding-left: 15px;
     background-color: var(--ivory);
     color: var(--rating-text);
-
 }
 /*подвал*/
 .main-footer {
