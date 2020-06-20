@@ -17,7 +17,8 @@
     --logo-htmlacademy-light: #BDBBBC;
     --basic-gray: #888888;
     --blue-button-opacity-text: #88b6d1;
-    --brown-button-opacity-text :#857871;
+    --brown-button-opacity-text: #857871;
+    --hotels-list-border: #E5E5E5;
 }
 @font-face {
     font-family:'PT Sans';
@@ -124,19 +125,6 @@ header {
     box-sizing: border-box;
     border-radius: 2px;
 }
-.blue-button {
-    background-color: var(--light-blue);
-    color: var(--white);
-    text-transform: uppercase;
-}
-.blue-button:hover {
-    background-color: var(--blue);
-    color: var(--white);
-}
-.blue-button:active {
-    background-color: var(--gray-blue);
-    color: #88b6d1;
-}
 .brown-button {
     background-color: var(--light-brown);
     color: var(--white);
@@ -189,17 +177,6 @@ header {
     margin-right: 73px;
 }
 
-.item-index-form {
-    font-family: 'PT Sans Bold';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 568px;
-}
-.item-index-form li {
-    list-style: none;
-}
-
 .option {
     display: block;
     margin-bottom: 25px;
@@ -235,7 +212,6 @@ header {
 .check-input:checked:disabled + .check-box {
     background-image: url(/img/checkbox-off-gray.svg) ;
 }
-
 .social-button path {
     fill: var(--white);
 }
@@ -528,12 +504,68 @@ footer {
     font-size: 14px;
     color: var(--small-text);
 }
+/*поиск отелей*/
+.index-button-form {
+    background-color: var(--light-brown);
+    color: var(--white);
+    font-family: 'PT Sans Bold';
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 125px;
+    padding-right: 124px;
+}
+.index-button-form:hover {
+    background-color: var(--brown);
+}
+.index-button-form:active {
+    background-color: var(--dark-brown);
+    color: var(--brown-button-opacity-text);
+}
+.item-index-form {
+    font-family: 'PT Sans Bold';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+.item-index-form ul {
+    margin: 0;
+    padding-left: 55px;
+}
+.item-index-form li {
+    list-style: none;
+}
+.index-blue-button {
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 181px;
+    padding-right: 182px;
+    margin-right: 55px;
+    margin-bottom: 55px;
+    margin-left: 55px;
+}
+.index-blue-button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.index-blue-button:active {
+    background-color: var(--gray-blue);
+    color: var(--blue-button-opacity-text);
+}
 /*Сортировка отелей*/
 .filter {
     display: flex;
     flex-direction: row;
     font-size: 12px;
     line-height: 18px;
+    border-bottom: 1px solid var(--hotels-list-border);
 }
 .filter span {
     padding-left: 73px;
@@ -610,6 +642,7 @@ footer {
     padding-right: 71px;
     padding-bottom: 30px;
     padding-left: 73px;
+    border-bottom: 1px solid var(--hotels-list-border);
 }
 .link-hotels h3{
     font-family: 'PT Sans Bold';

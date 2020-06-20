@@ -257,6 +257,32 @@
             и мы покажем вам лучшие предложения гостиниц в Cедоне
          </p>
         </div>
+        <button name="search" type="button" class="index-button-form" id="index_button">Поиск гостиницы в Седоне</button>
+        <form action="" method="get" class="item-index-form">
+          <ul>
+           <li>
+            <label for="arrival_date">Дата заезда:</label>
+             <input type="datetime" name="date_of_arrival" id="arrival_date" placeholder="24 апреля 2017">
+           </li>
+           <li>
+            <label for="departure_date">Дата выезда:</label>
+             <input type="datetime" name="date_of_departure" id="departure_date" placeholder="4 июля 2017">
+           </li>
+          </ul>
+          <label>
+            Взрослые:
+            <button type="button" class="regulation" disabled id="index_button">-</button>
+            <input type="text" name="adults" placeholder="2">
+            <button type="button" class="regulation" id="index_button">+</button>
+          </label>
+          <label>
+            Дети:
+            <button type="button" class="regulation" disabled id="index_button">-</button>
+            <input type="text" name="children" placeholder="0">
+            <button type="button" class="regulation" id="index_button">+</button>
+          </label>
+          <button type="submit" class="index-blue-button" id="index_button">Найти</button>
+        </form>
         </section>
         </main>
         <footer class="main-footer">
