@@ -19,6 +19,7 @@
     --blue-button-opacity-text: #88b6d1;
     --brown-button-opacity-text: #857871;
     --hotels-list-border: #E5E5E5;
+    --oval-background: #ABABAB;
 }
 @font-face {
     font-family:'PT Sans';
@@ -106,25 +107,7 @@ header {
     height: 1px;
     margin: -1px;
 }
-
-
-
 /*кнопки*/
-.button-result {
-    font-family: 'PT Sans';
-    font-size: 14px;
-    line-height: 21px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    border-radius: 2px;
-    text-transform: uppercase;
-}
-.button-result:hover {
-    background: var(--white);
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    border-radius: 2px;
-}
 .brown-button {
     background-color: var(--light-brown);
     color: var(--white);
@@ -158,60 +141,8 @@ header {
     padding-top: 16;
     padding-bottom: 16;*/
 }
-.search-options{
-    display: flex;
-    flex-direction: row;
-    background-image: url(../img/background_hotels.jpg);
-    background-repeat: no-repeat;
-    justify-content: space-between;
-}
-.search-options #check-box {
-    display: flex;
-    flex: 119px;
-    margin-left: 72px;
-}
-.search-options fieldset {
-    border: none;
-}
-.search-options #range{
-    margin-right: 73px;
-}
 
-.option {
-    display: block;
-    margin-bottom: 25px;
-}
-.check {
-    padding-left: 5px;
-}
-.check-input {
-    position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.check-box {
-    position: absolute;
-    margin-left: -5px;
-    width: 5px;
-    height: 5px;
-    background-image: url(/img/checkbox-off.svg) ;
-}
-.check-input:checked + .check-box {
-    background-image: url(/img/checkbox-on.svg) ;
-}
-.check-input:focus + .check-box {
-    background-image: url(/img/checkbox-off.svg) ;
-}
-.check-input:checked:focus + .check-box {
-    background-image: url(/img/checkbox-on.svg) ;
-}
-.check-input:disabled + .check-box {
-    background-image: url(/img/checkbox-on-gray.svg) ;
-}
-.check-input:checked:disabled + .check-box {
-    background-image: url(/img/checkbox-off-gray.svg) ;
-}
+
 .social-button path {
     fill: var(--white);
 }
@@ -236,85 +167,11 @@ header {
 .logo-htmlacademy:active path{
     fill: var(--logo-htmlacademy-light)
 }
-.item-range {
+/*.item-range {
     margin: 0;
     padding: 0;
     border: none;
-}
-.range-filter {
-    width: 317px;
-    margin-top: 26.5px;
-}
-.range-controls /*обертка шкалы*/{
-    position: relative;
-    height: 41px;
-    margin-bottom: 15px;
-    padding-top: 39px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: var(--black);
-    border-radius: 5px;
-}
-.range-controls .scale /*Статичная шкала*/{
-    height: 2px;
-    background: var(--white);
-    opacity: 0.3;
-}
-.range-controls .bar /*Изменяющаяся шкала*/ {
-    width: 78,5%;
-    height: 2px;
-    color: var(--white);
-    opacity: none;
-}
-.range-controls .toggle {
-    position: absolute;
-    top: 11px;
-    left: 0px;
-    width: 4px;
-    height: 4px;
-    padding: 0px;
-    border: 8px solid var(--white);
-    background-color: #ABABAB;
-    border-radius: 50%;
-}
-.range-controls .toggle-min {
-    top: 31px;
-    left: 20px;
-}
-.range-controls .toggle-max {
-    top: 31px;
-    left: 238px;
-}
-.price-controls {
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    border-radius: 2px;
-
-}
-.filter-item legend {
-    font-family: 'PT Sans Bold';
-    font-size: 16px;
-    line-height: 21px;
-}
-.price-controls {
-    border: 2px solid var(--black);
-    border-radius: 2px;
-
-}
-.price-controls label {
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-}
-.price-controls input {
-    padding-top: 5px;
-    margin-top: 6,5px;
-    margin-bottom: 8,5px;
-    color: #283136;
-    border: none;
-}
+}*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -452,8 +309,8 @@ footer {
     display: flex;
     text-align: center;
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin-top: 61px;/*???*/
     margin-left: 73px;
     margin-right: 65px;
     margin-bottom: 82px;
@@ -539,6 +396,14 @@ footer {
 .item-index-form li {
     list-style: none;
 }
+.item-index-form input {
+    border: none;
+    background-color: var(--ivory);
+    height: 38px;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--black);
+}
 .index-blue-button {
     background-color: var(--light-blue);
     color: var(--white);
@@ -558,6 +423,194 @@ footer {
 .index-blue-button:active {
     background-color: var(--gray-blue);
     color: var(--blue-button-opacity-text);
+}
+/*чекбоксы*/
+.search-options{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/background_hotels.jpg);
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+.hotels-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 119px;
+    margin-left: 72px;
+    margin-right: 347px;
+}
+.hotels-checkbox li {
+    padding-bottom: 25px;
+}
+.option {
+    display: block;
+    margin-bottom: 25px;
+}
+.search-options legend {
+    font-family: 'PT Sans Bold';
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white);
+    padding-top: 26.5px;
+    margin-bottom: 24px;
+}
+.search-options fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.search-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.check-option {
+    color: var(--white);
+    padding-left: 42px;
+}
+.check-box {
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg) ;
+    background-repeat: no-repeat;
+    margin-left: -42px;
+}
+.check {
+    padding-left: 5px;
+}
+.check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.check-input:checked + .check-box{
+    background-image: url(../img/checkbox-on.svg) ;
+}
+.check-input:focus + .check-box {
+    background-image: url(../img/checkbox-off.svg) ;
+}
+.check-input:checked:focus + .check-box {
+    background-image: url(../img/checkbox-on.svg) ;
+}
+.check-input:disabled + .check-box {
+    background-image: url(../img/checkbox-on-gray.svg) ;
+}
+.check-input:checked:disabled + .check-box {
+    background-image: url(../img/checkbox-off-gray.svg) ;
+}
+/*фильтр стоимость*/
+.range {
+    margin-right: 73px;
+}
+/*.filter-item legend {
+    font-family: 'PT Sans Bold';
+    font-size: 16px;
+    line-height: 21px;
+}*/
+/*.price-controls {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 2px;
+}*/
+.price-controls {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+    color: var(--white);
+    width: 315px;
+    margin-top: 10.5px;
+}
+.price-controls label {
+    font-size: 14px;
+    line-height: 21px;
+    /*text-align: center;*/
+}
+.price-controls input {
+    /*padding:0;
+    margin:0;*/
+    color: var(--white);
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+}
+.min-price {
+    border-right: 2px;
+}
+.range-filter {
+    width: 317px;
+    /*margin-top: 26.5px;*/
+}
+.range-controls /*обертка шкалы*/{
+    position: relative;
+    /*height: 41px;*/
+    padding-bottom: 33px;
+    padding-top: 20px;
+    /*padding-right: 20px;
+    padding-left: 20px;*/
+}
+.range-controls .scale /*Статичная шкала*/{
+    width: 316px;
+    height: 2px;
+    background: var(--white);
+    opacity: 0.3;
+}
+.range-controls .bar /*Изменяющаяся шкала*/ {
+    width: /*78,5%*/ 248px;
+    height: 2px;
+    color: var(--white);
+    opacity: none;
+}
+.range-controls .toggle {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    padding: 0px;
+    border: 8px solid var(--white);
+    background-color: var(--oval-background);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--oval-background);
+}
+.range-controls .toggle-min {
+    /*top: 31px;*/
+    left: 0px;
+}
+.range-controls .toggle-max {
+    /*top: 31px;*/
+    left: 238px;
+}
+.button-result {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-right: 35px;
+    padding-left: 36px;
+    margin-bottom: 32px;
+    margin-left: 95px;
+}
+.button-result:hover {
+    background: var(--white);
+    border: 2px solid var(--white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: black;
 }
 /*Сортировка отелей*/
 .filter {
@@ -728,6 +781,10 @@ footer {
     padding-left: 15px;
     background-color: var(--ivory);
     color: var(--rating-text);
+}
+/*карта*/
+.map {
+    margin-bottom: -120px;
 }
 /*подвал*/
 .main-footer {
