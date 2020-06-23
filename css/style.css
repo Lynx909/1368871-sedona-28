@@ -496,10 +496,10 @@ footer {
     background-image: url(../img/checkbox-on.svg) ;
 }
 .check-input:disabled + .check-box {
-    background-image: url(../img/checkbox-on-gray.svg) ;
+    background-image: url(../img/checkbox-off-gray.svg) ;
 }
 .check-input:checked:disabled + .check-box {
-    background-image: url(../img/checkbox-off-gray.svg) ;
+    background-image: url(../img/checkbox-on-gray.svg) ;
 }
 /*фильтр стоимость*/
 .range {
@@ -770,8 +770,15 @@ footer {
     margin: 0;
     padding: 0;
     display: block;
+    /*background-image: url(../img/star.svg);
+    background-repeat: no-repeat;*/
+}
+.div-rating ul {
+    list-style: none;
+}
+.div-rating li{
+    padding: 0;
     background-image: url(../img/star.svg);
-    background-repeat: no-repeat;
 }
 .rating {
     margin-top: 47px;
