@@ -68,7 +68,7 @@ header {
     text-align: right;
 }
 .site-navigation li{
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     line-height: 26px;
     list-style: none;
     width: 250px;/*проверить*/
@@ -226,7 +226,7 @@ footer {
     margin-top: 30px;
     }
 .item-index-text-above span {
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", sans-serif;
     font-size: 21px;
     line-height: 26px;
     padding-bottom: 25px;
@@ -249,12 +249,12 @@ footer {
     margin: 0;
 }
 .reason h3 {
-    font-family:'PT Sans Bold';
+    font-family:'PT Sans Bold', sans-serif;
     font-size: 21px;
     line-height: 21px;
 }
 .reason p {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
     margin: 0;
@@ -357,7 +357,7 @@ footer {
 .item-index-text-down h3 {
     margin: 0;
     padding-bottom: 30px;/*уточнить*/
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 30px;
     line-height: 24px;
 }
@@ -389,7 +389,7 @@ footer {
     color: var(--brown-button-opacity-text);
 }
 .item-index-form {
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     /*display: flex;
     flex-direction: column;
     align-items: center;*/
@@ -457,7 +457,7 @@ footer {
     margin-bottom: 25px;
 }
 .search-options legend {
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
@@ -515,9 +515,10 @@ footer {
     margin-right: 73px;
 }
 /*.filter-item legend {
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 16px;
     line-height: 21px;
+    margin: 0;
 }*/
 /*.price-controls {
     display: flex;
@@ -533,7 +534,6 @@ footer {
     border-radius: 2px;
     color: var(--white);
     width: 315px;
-    margin-top: 10.5px;
 }
 .price-controls label {
     font-size: 14px;
@@ -541,8 +541,11 @@ footer {
     /*text-align: center;*/
 }
 .price-controls input {
-    /*padding:0;
-    margin:0;*/
+    /*padding:0;*/
+    /*margin:0;*/
+    display: inline-block;
+    width: auto;
+    height: auto;
     color: var(--white);
     border: none;
     text-align: center;
@@ -598,7 +601,7 @@ footer {
     left: 238px;
 }
 .button-result {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -633,7 +636,7 @@ footer {
     padding-left: 73px;
     padding-top: 29px;
     padding-bottom: 31px;
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", sans-serif;
     font-size: 21px;
     line-height: 26px;
 }
@@ -707,7 +710,7 @@ footer {
     border-bottom: 1px solid var(--hotels-list-border);
 }
 .link-hotels h3{
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 21px;
     line-height: 26px;
     color: var(--black);
@@ -741,7 +744,7 @@ footer {
     padding-bottom: 3px;
     padding-left: 17px;
     margin-right: 6px;
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -760,7 +763,7 @@ footer {
     padding-top: 3px;
     padding-right: 17px;
     padding-bottom: 3px;
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -786,6 +789,7 @@ footer {
     list-style: none;
 }
 .div-rating li{
+    display:block;
     padding: 0;
     background-image: url(../img/star.svg);
 }
@@ -811,7 +815,7 @@ footer {
     background: rgba(255, 255, 255, 0.9);
 }
 .main-footer section:first-child {
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -868,13 +872,13 @@ footer {
     background-image: url(../img/calendar-blue.svg);
 }
 .search-group label {
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 112px;
 }
 .search-group input {
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 293px;
@@ -894,7 +898,6 @@ footer {
 }
 .group-adult label{
     width: 112px;
-
 }
 .group-children label{
     width: 65px;
