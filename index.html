@@ -87,34 +87,36 @@
             и мы покажем вам лучшие предложения гостиниц в Cедоне
          </p>
         </div>
+        <div class="search-form">
         <button name="search" type="button" class="index-button-form" id="index_button">Поиск гостиницы в Седоне</button>
         <form action="" method="get" class="item-index-form">
-          <ul class="date">
-           <li>
+          <div class="search-group">
             <label for="arrival_date">Дата заезда:</label>
              <input type="datetime" name="date_of_arrival" id="arrival_date" placeholder="24 апреля 2017">
-           </li>
-           <li>
+             <button type="button" aria-label=""></button>
+          </div>
+          <div class="search-group">
             <label for="departure_date">Дата выезда:</label>
-             <input type="datetime" name="date_of_departure" id="departure_date" placeholder="4 июля 2017">
-           </li>
-          </ul>
-          <div>
-          <label>
-            Взрослые:
-            <button type="button" class="regulation" disabled id="index_button">-</button>
-            <input type="text" name="adults" placeholder="2">
-            <button type="button" class="regulation" id="index_button">+</button>
-          </label>
-          <label>
-            Дети:
+            <input type="datetime" name="date_of_departure" id="departure_date" placeholder="4 июля 2017">
+            <button type="button" aria-label=""></button>
+          </div>
+          <div class="search-group-bottom">
+            <div class="group-adult">
+              <label>Взрослые:</label>
+              <button type="button" class="regulation" disabled id="index_button">-</button>
+              <input type="text" name="adults" placeholder="2">
+              <button type="button" class="regulation" id="index_button">+</button>
+            </div>
+          <div class="group-children">
+            <label>Дети:</label>
             <button type="button" class="regulation" disabled id="index_button">-</button>
             <input type="text" name="children" placeholder="0">
             <button type="button" class="regulation" id="index_button">+</button>
-          </label>
+          </div>
           </div>
           <button type="submit" class="index-blue-button" id="index_button">Найти</button>
         </form>
+        </div>
         </section>
         <section class="map">
           <img src="img/map.jpg" width="1199" height="594" alt="Карта Седоны">
