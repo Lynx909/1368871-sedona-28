@@ -196,7 +196,7 @@ footer {
     margin-top: 30px;
     }
 .item-index-text-above span {
-    font-family: "PT Sans Bold", sans-serif;
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 21px;
     line-height: 26px;
     padding-bottom: 25px;
@@ -376,6 +376,9 @@ footer {
     font-size: 14px;
     line-height: 26px;
     color: var(--black);
+}
+.item-index-form-show {
+    display: block;
 }
 .index-blue-button {
     background-color: var(--light-blue);
@@ -607,7 +610,7 @@ footer {
     padding-left: 73px;
     padding-top: 29px;
     padding-bottom: 31px;
-    font-family: "PT Sans Bold", sans-serif;
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 21px;
     line-height: 26px;
 }
@@ -802,7 +805,7 @@ footer {
     position: relative;
 }
 .main-footer section:first-child {
-    font-family: "PT Sans Bold", sans-serif;
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -861,13 +864,13 @@ footer {
     background-image: url(../img/calendar-blue.svg);
 }
 .search-group label {
-    font-family: "PT Sans Bold", sans-serif;
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 112px;
 }
 .search-group input {
-    font-family: "PT Sans Bold", sans-serif;
+    font-family: 'PT Sans Bold', sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 293px;
@@ -983,4 +986,3 @@ footer {
     left: 50%;
     top: 7px;
 }
-
