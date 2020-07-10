@@ -57,7 +57,7 @@ header {
     text-align: right;
 }
 .site-navigation li{
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold','Arial', sans-serif;
     line-height: 26px;
     list-style: none;
     width: 250px;/*проверить*/
@@ -162,7 +162,7 @@ body {
     background-color: var(--light-gray);
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans','Arial', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--black);
@@ -196,7 +196,7 @@ footer {
     margin-top: 30px;
     }
 .item-index-text-above span {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 26px;
     padding-bottom: 25px;
@@ -219,12 +219,12 @@ footer {
     margin: 0;
 }
 .reason h3 {
-    font-family:'PT Sans Bold', sans-serif;
+    font-family:'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 21px;
 }
 .reason p {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 21px;
     margin: 0;
@@ -325,7 +325,7 @@ footer {
 .item-index-text-down h3 {
     margin: 0;
     padding-bottom: 30px;/*уточнить*/
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 24px;
 }
@@ -338,7 +338,7 @@ footer {
 .index-button-form {
     background-color: var(--light-brown);
     color: var(--white);
-    font-family: 'PT Sans Bold',sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
@@ -358,7 +358,7 @@ footer {
     color: var(--brown-button-opacity-text);
 }
 .item-index-form {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px;
 }
@@ -428,7 +428,7 @@ footer {
     margin-bottom: 25px;
 }
 .hotels-checkbox legend {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
@@ -486,7 +486,7 @@ footer {
     margin-right: 73px;
 }
 .filter-item legend {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
@@ -574,7 +574,7 @@ footer {
     border: 9.5px solid var(--white);
 }
 .button-result {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -610,7 +610,7 @@ footer {
     padding-left: 73px;
     padding-top: 29px;
     padding-bottom: 31px;
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 26px;
 }
@@ -690,7 +690,7 @@ footer {
     border-bottom: 1px solid var(--hotels-list-border);
 }
 .link-hotels h3{
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 26px;
     color: var(--black);
@@ -724,7 +724,7 @@ footer {
     padding-bottom: 3px;
     padding-left: 17px;
     margin-right: 6px;
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -743,7 +743,7 @@ footer {
     padding-top: 3px;
     padding-right: 17px;
     padding-bottom: 3px;
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -805,7 +805,7 @@ footer {
     position: relative;
 }
 .main-footer section:first-child {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -864,13 +864,13 @@ footer {
     background-image: url(../img/calendar-blue.svg);
 }
 .search-group label {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 112px;
 }
 .search-group input {
-    font-family: 'PT Sans Bold', sans-serif;
+    font-family: 'PT Sans Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 293px;
