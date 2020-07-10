@@ -453,7 +453,7 @@ footer {
     position: absolute;
     width: 27px;
     height: 23px;
-    background-image: url(../img/checkbox-off.svg) ;
+    background-image: url(../img/checkbox_off.svg) ;
     background-repeat: no-repeat;
     margin-left: -42px;
 }
@@ -467,19 +467,19 @@ footer {
     appearance: none;
 }
 .check-input:checked + .check-box{
-    background-image: url(../img/checkbox-on.svg) ;
+    background-image: url(../img/checkbox_on.svg) ;
 }
 .check-input:focus + .check-box {
-    background-image: url(../img/checkbox-off.svg) ;
+    background-image: url(../img/checkbox_off.svg) ;
 }
 .check-input:checked:focus + .check-box {
-    background-image: url(../img/checkbox-on.svg) ;
+    background-image: url(../img/checkbox_on.svg) ;
 }
 .check-input:disabled + .check-box {
-    background-image: url(../img/checkbox-off-gray.svg) ;
+    background-image: url(../img/checkbox_off_gray.svg) ;
 }
 .check-input:checked:disabled + .check-box {
-    background-image: url(../img/checkbox-on-gray.svg) ;
+    background-image: url(../img/checkbox_on_gray.svg) ;
 }
 /*фильтр стоимость*/
 .range {
@@ -850,7 +850,7 @@ footer {
 /*кнопка с календарем*/
 .search-group button {
     position: absolute;
-    background-image: url(../img/calendar-gray.svg);
+    background-image: url(../img/calendar_gray.svg);
     width: 21px;
     height: 23px;
     right: 8px;
@@ -858,10 +858,10 @@ footer {
     outline: none;
 }
 .search-group button:hover {
-    background-image: url(../img/calendar-black.svg);
+    background-image: url(../img/calendar_black.svg);
 }
 .search-group button:active {
-    background-image: url(../img/calendar-blue.svg);
+    background-image: url(../img/calendar_blue.svg);
 }
 .search-group label {
     font-family: 'PT Sans Bold', 'Arial', sans-serif;
