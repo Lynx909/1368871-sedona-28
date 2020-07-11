@@ -381,6 +381,7 @@ footer {
     font-size: 14px;
     line-height: 26px;
     color: var(--black);
+    text-transform: uppercase;
 }
 .item-index-form-show {
     display: block;
