@@ -1,37 +1,35 @@
 :root {
-    --white : #FFFFFF;
+    --white: #ffffff;
     --black: #000000;
-    --gray-blue:#5496BD;
-    --blue:#669EC0;
-    --light-blue:#81B3D2;
-    --dark-brown:#503E33;
-    --brown: #604E43;
+    --gray-blue: #5496bd;
+    --blue: #669ec0;
+    --light-blue: #81b3d2;
+    --dark-brown: #503e33;
+    --brown: #604e43;
     --light-brown: #766357;
-    --ivory:#F2F2F2;
-    --beige: #EBEBEB;
-    --light-gray :#EEEEEE;
-    --dark-grey: #A9A9A9;
+    --ivory: #f2f2f2;
+    --beige: #ebebeb;
+    --light-gray: #eeeeee;
+    --dark-grey: #a9a9a9;
     --small-text: #333333;
-    --rating-text:#666666;
-    --regulation: #A9A9A9;
-    --logo-htmlacademy-light: #BDBBBC;
+    --rating-text: #666666;
+    --regulation: #a9a9a9;
+    --logo-htmlacademy-light: #bdbbbc;
     --basic-gray: #888888;
     --blue-button-opacity-text: #88b6d1;
     --brown-button-opacity-text: #857871;
-    --hotels-list-border: #E5E5E5;
-    --oval-background: #ABABAB;
+    --hotels-list-border: #e5e5e5;
+    --oval-background: #ababab;
 }
 @font-face {
-    font-family:'PT Sans';
-    src: url('../fonts/ptsans.woff2') format('woff2'),
-         url('../fonts/ptsans.woff') format('woff');
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family:'PT Sans Bold';
-    src: url('../fonts/ptsansbold.woff2') format('woff2'),
-         url('../fonts/ptsansbold.woff') format('woff');
+    font-family: "PT Sans Bold";
+    src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -47,7 +45,7 @@ header {
     justify-content: space-between;
     text-align: center;
     padding: 15px 0;
-    margin-top: 0;   
+    margin-top: 0;
 }
 .site-navigation li:nth-child(2) {
     padding-left: 0;
@@ -56,18 +54,18 @@ header {
 .site-navigation li:nth-child(3) {
     text-align: right;
 }
-.site-navigation li{
-    font-family: 'PT Sans Bold','Arial', sans-serif;
+.site-navigation li {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     line-height: 26px;
     list-style: none;
-    width: 250px;/*проверить*/
+    width: 250px; /*проверить*/
 }
 .site-navigation a {
     text-decoration: none;
     color: var(--black);
 }
 .site-navigation a:hover {
-    color: var(--light-blue)
+    color: var(--light-blue);
 }
 .site-navigation a:active {
     color: var(--black);
@@ -104,7 +102,6 @@ header {
 .brown-button:active {
     background-color: var(--dark-brown);
     color: var(--brown-button-opacity-text);
-
 }
 .regulation {
     background-color: var(--ivory);
@@ -123,7 +120,7 @@ header {
     color: var(--black);
 }
 .regulation:active {
-    color: var(--light-blue)
+    color: var(--light-blue);
 }
 /*иконки соцсетей*/
 .social-button path {
@@ -134,19 +131,19 @@ header {
     fill-opacity: 0.3;
 }
 .social-button:hover rect {
-    fill: var(--light-blue)
+    fill: var(--light-blue);
 }
 .social-button:hover rect {
-    fill: var(--blue)
+    fill: var(--blue);
 }
 .social-button:active rect {
-    fill: var(--gray-blue)
+    fill: var(--gray-blue);
 }
 .logo-htmlacademy:hover path {
-    fill: var(--light-blue)
+    fill: var(--light-blue);
 }
-.logo-htmlacademy:active path{
-    fill: var(--logo-htmlacademy-light)
+.logo-htmlacademy:active path {
+    fill: var(--logo-htmlacademy-light);
 }
 .container {
     max-width: 1200px;
@@ -162,7 +159,7 @@ body {
     background-color: var(--light-gray);
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans','Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--black);
@@ -194,9 +191,9 @@ footer {
     align-items: center;
     text-align: center;
     margin-top: 30px;
-    }
+}
 .item-index-text-above span {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     padding-bottom: 25px;
@@ -219,17 +216,17 @@ footer {
     margin: 0;
 }
 .reason h3 {
-    font-family:'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
 }
 .reason p {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     margin: 0;
     padding: 0;
-    color: var(--small-text)
+    color: var(--small-text);
 }
 .first-blue-box {
     background-color: var(--light-blue);
@@ -250,7 +247,7 @@ footer {
 .first-blue-box p {
     color: var(--white);
 }
-.first-blue-box span{
+.first-blue-box span {
     display: block;
     padding-bottom: 23px;
 }
@@ -283,7 +280,7 @@ footer {
     text-align: center;
     list-style: none;
     padding: 0;
-    margin-top: 61px;/*???*/
+    margin-top: 61px; /*???*/
     margin-left: 73px;
     margin-right: 65px;
     margin-bottom: 82px;
@@ -324,8 +321,8 @@ footer {
 }
 .item-index-text-down h3 {
     margin: 0;
-    padding-bottom: 30px;/*уточнить*/
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    padding-bottom: 30px; /*уточнить*/
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 30px;
     line-height: 24px;
 }
@@ -338,7 +335,7 @@ footer {
 .index-button-form {
     background-color: var(--light-brown);
     color: var(--white);
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
@@ -358,7 +355,7 @@ footer {
     color: var(--brown-button-opacity-text);
 }
 .item-index-form {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px;
 }
@@ -402,7 +399,7 @@ footer {
     color: var(--blue-button-opacity-text);
 }
 /*чекбоксы*/
-.search-options{
+.search-options {
     display: flex;
     flex-direction: row;
     background-image: url(../img/background_hotels.jpg);
@@ -428,7 +425,7 @@ footer {
     margin-bottom: 25px;
 }
 .hotels-checkbox legend {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
@@ -453,7 +450,7 @@ footer {
     position: absolute;
     width: 27px;
     height: 23px;
-    background-image: url(../img/checkbox_off.svg) ;
+    background-image: url(../img/checkbox_off.svg);
     background-repeat: no-repeat;
     margin-left: -42px;
 }
@@ -466,27 +463,27 @@ footer {
     -moz-appearance: none;
     appearance: none;
 }
-.check-input:checked + .check-box{
-    background-image: url(../img/checkbox_on.svg) ;
+.check-input:checked + .check-box {
+    background-image: url(../img/checkbox_on.svg);
 }
 .check-input:focus + .check-box {
-    background-image: url(../img/checkbox_off.svg) ;
+    background-image: url(../img/checkbox_off.svg);
 }
 .check-input:checked:focus + .check-box {
-    background-image: url(../img/checkbox_on.svg) ;
+    background-image: url(../img/checkbox_on.svg);
 }
 .check-input:disabled + .check-box {
-    background-image: url(../img/checkbox_off_gray.svg) ;
+    background-image: url(../img/checkbox_off_gray.svg);
 }
 .check-input:checked:disabled + .check-box {
-    background-image: url(../img/checkbox_on_gray.svg) ;
+    background-image: url(../img/checkbox_on_gray.svg);
 }
 /*фильтр стоимость*/
 .range {
     margin-right: 73px;
 }
 .filter-item legend {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
@@ -532,12 +529,12 @@ footer {
 .range-filter {
     width: 317px;
 }
-.range-controls /*обертка шкалы*/{
+.range-controls /*обертка шкалы*/ {
     position: relative;
     padding-bottom: 33px;
     padding-top: 20px;
 }
-.range-controls .scale /*Статичная шкала*/{
+.range-controls .scale /*Статичная шкала*/ {
     width: 316px;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -574,7 +571,7 @@ footer {
     border: 9.5px solid var(--white);
 }
 .button-result {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -610,7 +607,7 @@ footer {
     padding-left: 73px;
     padding-top: 29px;
     padding-bottom: 31px;
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
 }
@@ -689,8 +686,8 @@ footer {
     padding-left: 73px;
     border-bottom: 1px solid var(--hotels-list-border);
 }
-.link-hotels h3{
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+.link-hotels h3 {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     color: var(--black);
@@ -724,7 +721,7 @@ footer {
     padding-bottom: 3px;
     padding-left: 17px;
     margin-right: 6px;
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -743,7 +740,7 @@ footer {
     padding-top: 3px;
     padding-right: 17px;
     padding-bottom: 3px;
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -757,14 +754,14 @@ footer {
 }
 .reservation-button:active {
     background: var(--dark-brown);
-    color: var(--brown-button-opacity-text)
+    color: var(--brown-button-opacity-text);
 }
 .stars {
     margin: 0;
     padding: 0;
     display: block;
 }
-.stars ul{
+.stars ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -772,8 +769,8 @@ footer {
     width: 110px;
     justify-content: flex-end;
 }
-.stars li{
-    display:block;
+.stars li {
+    display: block;
     width: 19px;
     height: 17px;
     padding: 0;
@@ -805,7 +802,7 @@ footer {
     position: relative;
 }
 .main-footer section:first-child {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -833,7 +830,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
 }
-.html-academy p{
+.html-academy p {
     margin-right: 8px;
 }
 /*форма поиска*/
@@ -864,13 +861,13 @@ footer {
     background-image: url(../img/calendar_blue.svg);
 }
 .search-group label {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 112px;
 }
 .search-group input {
-    font-family: 'PT Sans Bold', 'Arial', sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     width: 293px;
@@ -899,10 +896,10 @@ footer {
     display: flex;
     align-items: center;
 }
-.group-adult label{
+.group-adult label {
     width: 112px;
 }
-.group-children label{
+.group-children label {
     width: 65px;
     margin-left: 53px;
 }
@@ -977,7 +974,7 @@ footer {
     opacity: 1;
     text-transform: uppercase;
 }
-.price-controls:before{
+.price-controls:before {
     content: "";
     background-color: var(--white);
     width: 2px;
