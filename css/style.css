@@ -346,6 +346,7 @@ footer {
     display: block;
     width: 100%;
     outline: none;
+    text-decoration: none;
 }
 .index-button-form:hover {
     background-color: var(--brown);
