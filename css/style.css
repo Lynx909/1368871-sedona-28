@@ -411,7 +411,7 @@ footer {
 .search-options {
     display: flex;
     flex-direction: row;
-    background: /*var(--gray-blue)*/ url(../img/background_hotels.jpg);
+    background: var(--gray-blue) url(../img/background_hotels.jpg);
     background-repeat: no-repeat;
     justify-content: space-between;
 }
