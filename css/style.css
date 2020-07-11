@@ -176,7 +176,7 @@ footer {
     transform: translateX(-50%);
 }
 .slider {
-    background-image: url(../img/background_mountains.jpg);
+    background: var(--gray-blue) url(../img/background_mountains.jpg);
     display: flex;
     justify-content: center;
     padding-top: 77px;
@@ -359,6 +359,9 @@ footer {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px;
+    margin-bottom: -395px;
+    position: relative;
+    background: var(--white);
 }
 .item-index-form ul {
     margin: 0;
@@ -403,7 +406,7 @@ footer {
 .search-options {
     display: flex;
     flex-direction: row;
-    background-image: url(../img/background_hotels.jpg);
+    background: /*var(--gray-blue)*/ url(../img/background_hotels.jpg);
     background-repeat: no-repeat;
     justify-content: space-between;
 }
