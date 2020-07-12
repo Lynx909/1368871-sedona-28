@@ -537,6 +537,7 @@ footer {
     font-family: inherit;
     font-size: inherit;
     background: none;
+    padding-left: 5px;
 }
 .min-price,
 .max-price {
@@ -661,7 +662,7 @@ footer {
     flex-direction: row;
     justify-content: left;
     margin-top: 31px;
-    margin-right: 471px;
+    margin-right: 466px;
     margin-left: 0;
     margin-bottom: 37px;
     padding: 0;
@@ -672,6 +673,8 @@ footer {
     list-style: none;
     margin-right: 32px;
     border-bottom: 1px dashed var(--light-blue);
+    padding-top: 2px;
+    padding-left: 1px;
 }
 .filter-results li:hover {
     color: var(--light-blue);
@@ -821,7 +824,7 @@ footer {
 }
 /*карта*/
 .map {
-    margin-bottom: -120px;
+    margin-bottom: -127px;
 }
 /*подвал*/
 .main-footer {
@@ -1024,11 +1027,11 @@ footer {
     font-size: 21px;
     line-height: 32px;
     text-align: center;
-    margin-left: 111px;
+    margin-left: 110px;
     padding-right: 0;
 }
 .contacts p {
-    margin-top: 7px;
+    margin-top: 3px;
     margin-left: 15px;
 }
 .contacts a {
