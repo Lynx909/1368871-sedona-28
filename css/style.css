@@ -150,11 +150,10 @@ header {
     fill: var(--logo-htmlacademy-light);
 }
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     background-color: var(--white);
     box-shadow: 0 5px 15px var(--brown);
-    width: 100%;
     height: auto;
     position: relative;
 }
@@ -194,7 +193,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 44px;
 }
 .item-index-text-above span {
     font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -304,6 +303,7 @@ footer {
     padding-bottom: 54px;
     padding-left: 96px;
     padding-right: 77px;
+    list-style: none;
 }
 .index-second-color h3 {
     margin: 0;
