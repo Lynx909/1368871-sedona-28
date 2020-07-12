@@ -414,6 +414,7 @@ footer {
     background: var(--gray-blue) url(../img/background_hotels.jpg);
     background-repeat: no-repeat;
     justify-content: space-between;
+    background-size: cover;
 }
 .search-options ul {
     list-style: none;
@@ -721,6 +722,7 @@ footer {
     display: inline-block;
     width: 107px;
     height: 21px;
+    vertical-align: text-top;
 }
 .hotels-button {
     display: flex;
