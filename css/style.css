@@ -47,22 +47,31 @@ header {
     padding: 15px 0;
     margin-top: 0;
 }
+.site-navigation li {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    line-height: 26px;
+    list-style: none;
+    /*width: 250px; *//*проверить*/
+}
 .site-navigation li:nth-child(2) {
     padding-left: 0;
+    padding-right: 285px;
     text-align: left;
 }
 .site-navigation li:nth-child(3) {
     text-align: right;
 }
-.site-navigation li {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
-    line-height: 26px;
-    list-style: none;
-    width: 250px; /*проверить*/
+.site-navigation li:first-child {
+    padding-left: 72px;
+}
+.site-navigation li:last-child {
+    padding-right: 44px;
+    padding-left: 13px;
 }
 .site-navigation a {
     text-decoration: none;
     color: var(--black);
+    padding-right: 28px;
 }
 .site-navigation a:hover {
     color: var(--light-blue);
@@ -199,7 +208,7 @@ footer {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 29px;
 }
 .item-index-text-above p {
     font-size: 14px;
@@ -240,6 +249,7 @@ footer {
 .first-blue-box div {
     padding-right: 51px;
     padding-left: 52px;
+    padding-bottom: 36px;
 }
 .first-blue-box h3 {
     padding: 0;
@@ -249,6 +259,7 @@ footer {
 }
 .first-blue-box p {
     color: var(--white);
+    padding-top: 3px;
 }
 .first-blue-box span {
     display: block;
@@ -283,15 +294,15 @@ footer {
     text-align: center;
     list-style: none;
     padding: 0;
-    margin-top: 61px; /*???*/
+    margin-top: 57px;
     margin-left: 73px;
     margin-right: 65px;
-    margin-bottom: 82px;
+    margin-bottom: 79px;
     align-items: center;
     justify-content: space-between;
 }
 .list-between-reasons h3 {
-    padding-bottom: 25px;
+    padding-bottom: 6px;
 }
 .index-second-color {
     background-color: var(--light-gray);
@@ -304,6 +315,9 @@ footer {
     padding-left: 96px;
     padding-right: 77px;
     list-style: none;
+}
+.index-second-color li:nth-child(2) {
+    padding-left: 20px;
 }
 .index-second-color h3 {
     margin: 0;
@@ -321,11 +335,12 @@ footer {
     align-items: center;
     text-align: center;
     line-height: 24px;
-    margin-top: 58px;
+    margin-top: 64px;
+    margin-bottom: 39px;
 }
 .item-index-text-down h3 {
     margin: 0;
-    padding-bottom: 30px; /*уточнить*/
+    padding-bottom: 32px; /*уточнить*/
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 30px;
     line-height: 24px;
@@ -821,14 +836,14 @@ footer {
     text-decoration: none;
     color: var(--black);
 }
-.main-footer section:first-child {
+/*.main-footer section:first-child {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     margin-left: 111px;
     padding-right: 0;
-}
+}*/
 .main-footer section:last-child {
     margin-right: 138px;
 }
@@ -837,6 +852,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin: 0;
+    padding-right: 6px;
     padding-left: 0;
     padding-top: 36px;
     padding-bottom: 36px;
@@ -1002,4 +1018,21 @@ footer {
     position: absolute;
     left: 50%;
     top: 7px;
+}
+.contacts {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    margin-left: 111px;
+    padding-right: 0;
+}
+.contacts p {
+    margin-top: 7px;
+    margin-left: 15px;
+}
+.contacts a {
+    padding-top: 3px;
+    display: inline-block;
+    vertical-align: middle;
 }
