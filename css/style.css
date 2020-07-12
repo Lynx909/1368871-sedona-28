@@ -51,7 +51,6 @@ header {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     line-height: 26px;
     list-style: none;
-    /*width: 250px; */ /*проверить*/
 }
 .site-navigation li:nth-child(2) {
     padding-left: 0;
@@ -83,10 +82,6 @@ header {
 .site-navigation .active-li {
     color: var(--light-brown);
 }
-/*.main-navigation {
-    display: flex;
-    justify-content: space-between;
-}*/
 .page-body {
     display: flex;
     flex-direction: column;
@@ -839,14 +834,6 @@ footer {
     text-decoration: none;
     color: var(--black);
 }
-/*.main-footer section:first-child {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-    margin-left: 111px;
-    padding-right: 0;
-}*/
 .main-footer section:last-child {
     margin-right: 138px;
 }
