@@ -245,16 +245,21 @@ footer {
     padding-right: 51px;
     padding-left: 52px;
     padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .first-blue-box h3 {
     padding: 0;
     padding-top: 47px;
     margin: 0;
     margin-bottom: 25px;
+    width: 122px;
 }
 .first-blue-box p {
     color: var(--white);
     padding-top: 3px;
+    width: 297px;
 }
 .first-blue-box span {
     display: block;
@@ -639,17 +644,23 @@ footer {
     padding-bottom: 37px;
     margin: 0;
 }
-.filter button {
+.filter-button {
     padding-top: 40px;
     padding-bottom: 36px;
     border: none;
     background: none;
     outline: none;
 }
-.filter button path:hover {
+/*.filter button path:hover {
     fill: var(--black);
 }
 .filter button path:active {
+    fill: var(--light-blue);
+}*/
+.filter-button path:hover {
+    fill: var(--black);
+}
+.filter-button path:active {
     fill: var(--light-blue);
 }
 .filter ul {
@@ -661,36 +672,39 @@ footer {
     margin-left: 0;
     margin-bottom: 37px;
     padding: 0;
+    list-style: none;
 }
-.filter-results li {
+.filter-results {
     color: var(--black);
     opacity: 0.3;
-    list-style: none;
     margin-right: 32px;
     border-bottom: 1px dashed var(--light-blue);
     padding-top: 2px;
     padding-left: 1px;
 }
-.filter-results li:hover {
+.filter-results:hover {
     color: var(--light-blue);
     opacity: 1;
 }
-.filter-results li:active {
+.filter-results:active {
     text-decoration: none;
     color: var(--black);
     opacity: 1;
     border: none;
 }
-.filter-results li:active:focus {
+.filter-results:active:focus {
     text-decoration: none;
     color: var(--light-blue);
     opacity: 1;
     border: none;
 }
-/*.filter-active {
+.filter-active {
     color: var(--light-blue);
     border-bottom: none;
-}*/
+    margin-right: 32px;
+    padding-top: 2px;
+    padding-left: 1px;
+}
 /*список отелей*/
 .hotels-center {
     padding-left: 29px;
@@ -842,8 +856,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin: 0;
-    padding-right: 6px;
-    padding-left: 0;
+    padding-right: 18px;
+    padding-left: 5px;
     padding-top: 36px;
     padding-bottom: 36px;
 }
@@ -907,7 +921,8 @@ footer {
 .search-group input:hover {
     background-color: var(--beige);
 }
-.search-group input:active {
+.search-group input:active,
+.search-group input:focus {
     background-color: var(--white);
     border: 2px solid var(--hotels-list-border);
     width: 289px;
@@ -1014,8 +1029,9 @@ footer {
     font-size: 21px;
     line-height: 32px;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 103px;
     padding-right: 0;
+    width: 251px;
 }
 .contacts p {
     margin-top: 3px;
