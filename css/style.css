@@ -838,6 +838,7 @@ footer {
     align-items: center;
     background: rgba(255, 255, 255, 0.9);
     position: relative;
+    overflow: hidden;
 }
 .main-footer a {
     text-decoration: none;
